@@ -32,7 +32,7 @@
 \contentsline {subsubsection}{0 Impressions with non-zero Cost-Per-Mile(CPM)}{22}{subsubsection*.4}%
 \contentsline {subsection}{\numberline {A.1.5}Outlier Assessment}{23}{subsection.A.1.5}%
 \contentsline {subsubsection}{\texttt {Spend} severe outliers investigation}{23}{subsubsection*.5}%
-\contentsline {subsection}{\numberline {A.1.6}Data Cleaning Summary}{25}{subsection.A.1.6}%
+\contentsline {subsection}{\numberline {A.1.6}Data Cleaning Summary}{24}{subsection.A.1.6}%
 \contentsline {chapter}{\numberline {B}Statistical Test Results of Metrics across Platforms}{27}{appendix.B}%
 \contentsline {section}{\numberline {B.1}Platform Performance Analysis}{27}{section.B.1}%
 \contentsline {subsection}{\numberline {B.1.1}Return on Advertising Spend (ROAS)}{27}{subsection.B.1.1}%

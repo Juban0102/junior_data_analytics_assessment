@@ -1,1 +1,25 @@
 -add that the view through observations are from google platform
+
+
+
+
+Future Improvement: Report Effect Sizes
+
+Purpose: - Statistical significance (p-values) tells whether a
+difference is likely real (not due to random chance). - Effect size
+tells how large or practically important that difference is.
+
+Why add it? - A result can be statistically significant but have a very
+small practical impact. - Effect sizes help readers judge whether the
+findings are meaningful for business decisions.
+
+Recommended Effect Sizes: - Kruskal–Wallis test → Epsilon squared (ε²) -
+Measures how much variation is explained by the grouping variable. -
+Dunn’s post-hoc test → Cliff’s Delta or Rank-biserial Correlation -
+Measures the magnitude of pairwise differences between groups. - (For
+future parametric analyses) - ANOVA → Eta squared (η²) or Partial Eta
+squared
+
+Keywords to search later: - Statistical significance vs practical
+significance - Effect size - Epsilon squared (Kruskal–Wallis) - Cliff’s
+Delta - Rank-biserial Correlation - Eta squared (ANOVA)

@@ -1,0 +1,375 @@
+\chapter{Statistical Test Results of Metrics across Regions}
+
+This appendix presents the complete statistical test results supporting the analyses discussed in the main report.
+
+\section{Regional Performance Analysis}\label{appendix:regional_performance_analysis}
+
+\subsection{Return on Advertising Spend (ROAS)}
+
+\subsubsection{Descriptive Statistics}
+
+\begin{table}[H]
+	\centering
+	\caption{Descriptive statistics for ROAS by region.}
+	\begin{tabular}{lcccc}
+		\toprule
+		Region & Mean & Median & Std. Dev. & Count \\
+		\midrule
+		Midwest & 0.8337 & 0.6951 & 0.4940 & 760 \\
+		Northeast & 1.0330 & 0.8678 & 0.5960 & 803 \\
+		South & 0.9605 & 0.8535 & 0.4868 & 803 \\
+		West & 1.0083 & 0.8915 & 0.5662 & 807 \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\subsubsection{Assumption Tests}
+
+\subsubsection{Shapiro--Wilk Test}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lc}
+		\toprule
+		Region & p-value \\
+		\midrule
+		Midwest & $<0.0001$ \\
+		Northeast & $<0.0001$ \\
+		South & $<0.0001$ \\
+		West & $<0.0001$ \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+All regional distributions significantly deviated from normality ($p<0.05$).
+
+\vspace{0.3cm}
+
+\subsubsection{Levene's Test}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lc}
+		\toprule
+		Statistic & Value \\
+		\midrule
+		p-value & $<0.0001$ \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+The variability of ROAS differed significantly across regions.
+
+\vspace{0.3cm}
+
+\subsubsection{Kruskal--Wallis Test}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lc}
+		\toprule
+		Statistic & Value \\
+		\midrule
+		H-statistic & 69.2321 \\
+		p-value & $<0.0001$ \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+The Kruskal--Wallis test indicates that at least one region differs significantly in ROAS.
+
+\vspace{0.3cm}
+
+\subsubsection{Dunn Post-hoc Test}
+
+\begin{table}[H]
+	\centering
+	\caption{Pairwise Dunn test p-values (Bonferroni adjusted).}
+	\begin{tabular}{lcccc}
+		\toprule
+		& Midwest & Northeast & South & West \\
+		\midrule
+		Midwest & -- & $<0.0001$ & $<0.0001$ & $<0.0001$ \\
+		Northeast & $<0.0001$ & -- & 1.0000 & 1.0000 \\
+		South & $<0.0001$ & 1.0000 & -- & 1.0000 \\
+		West & $<0.0001$ & 1.0000 & 1.0000 & -- \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+The Midwest \textbf{differed significantly} from the Northeast, South, and West, whereas \textbf{no statistically significant differences} were observed among the Northeast, South, and West.
+
+\subsubsection{Summary}
+
+\begin{itemize}
+	\item The highest average ROAS was achieved by the Northeast (1.0330).
+	\item The lowest average ROAS was observed for the Midwest (0.8337).
+	\item The Midwest differed significantly from all other regions, while no statistically significant differences were observed among the Northeast, South, and West.
+\end{itemize}
+
+\subsection{Click-Through Rate (CTR)}
+
+\subsubsection{Descriptive Statistics}
+
+\begin{table}[H]
+	\centering
+	\caption{Descriptive statistics for CTR by region.}
+	\begin{tabular}{lcccc}
+		\toprule
+		Region & Mean & Median & Std. Dev. & Count \\
+		\midrule
+		Midwest & 0.0074 & 0.0066 & 0.0039 & 760 \\
+		Northeast & 0.0072 & 0.0064 & 0.0039 & 803 \\
+		South & 0.0074 & 0.0067 & 0.0038 & 803 \\
+		West & 0.0073 & 0.0067 & 0.0038 & 807 \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\subsubsection{Assumption Tests}
+
+\subsubsection{Shapiro--Wilk Test}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lc}
+		\toprule
+		Region & p-value \\
+		\midrule
+		Midwest & $<0.0001$ \\
+		Northeast & $<0.0001$ \\
+		South & $<0.0001$ \\
+		West & $<0.0001$ \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+All regional distributions \textbf{significantly deviated} from normality ($p<0.05$).
+
+\vspace{0.3cm}
+
+\subsubsection{Levene's Test}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lc}
+		\toprule
+		Statistic & Value \\
+		\midrule
+		p-value & 0.8844 \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+The variability of CTR \textbf{did not differ significantly} across regions.
+
+\vspace{0.3cm}
+
+\subsubsection{Kruskal--Wallis Test}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lc}
+		\toprule
+		Statistic & Value \\
+		\midrule
+		H-statistic & 0.9848 \\
+		p-value & 0.8049 \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+The Kruskal--Wallis test indicates \textbf{no statistically significant differences} in CTR across regions.
+
+\subsubsection{Summary}
+
+\begin{itemize}
+	\item The highest average CTR was achieved by the Midwest (0.0074), although the regional averages were very similar.
+	\item The lowest average CTR was observed for the Northeast (0.0072).
+	\item No statistically significant differences in CTR were found between regions ($p \geq 0.05$).
+\end{itemize}
+
+\subsection{Conversion Rate (CVR)}
+
+\subsubsection{Descriptive Statistics}
+
+\begin{table}[H]
+	\centering
+	\caption{Descriptive statistics for CVR by region.}
+	\begin{tabular}{lcccc}
+		\toprule
+		Region & Mean & Median & Std. Dev. & Count \\
+		\midrule
+		Midwest & 0.0229 & 0.0236 & 0.0073 & 737 \\
+		Northeast & 0.0284 & 0.0288 & 0.0086 & 771 \\
+		South & 0.0270 & 0.0270 & 0.0071 & 785 \\
+		West & 0.0277 & 0.0267 & 0.0081 & 781 \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\subsubsection{Assumption Tests}
+
+\subsubsection{Shapiro--Wilk Test}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lc}
+		\toprule
+		Region & p-value \\
+		\midrule
+		Midwest & $<0.0001$ \\
+		Northeast & $<0.0001$ \\
+		South & $<0.0001$ \\
+		West & $<0.0001$ \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+All regional distributions\textbf{ significantly deviated} from normality ($p<0.05$).
+
+\vspace{0.3cm}
+
+\subsubsection{Levene's Test}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lc}
+		\toprule
+		Statistic & Value \\
+		\midrule
+		p-value & $<0.0001$ \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+The variability of CVR \textbf{differed significantly} across regions.
+
+\vspace{0.3cm}
+
+\subsubsection{Kruskal--Wallis Test}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lc}
+		\toprule
+		Statistic & Value \\
+		\midrule
+		H-statistic & 190.4208 \\
+		p-value & $<0.0001$ \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+The Kruskal--Wallis test indicates that at least one region\textbf{ differs significantly} in CVR.
+
+\vspace{0.3cm}
+
+\subsubsection{Dunn Post-hoc Test}
+
+\begin{table}[H]
+	\centering
+	\caption{Pairwise Dunn test p-values (Bonferroni adjusted).}
+	\begin{tabular}{lcccc}
+		\toprule
+		& Midwest & Northeast & South & West \\
+		\midrule
+		Midwest & -- & $<0.0001$ & $<0.0001$ & $<0.0001$ \\
+		Northeast & $<0.0001$ & -- & 0.0057 & 0.0396 \\
+		South & $<0.0001$ & 0.0057 & -- & 1.0000 \\
+		West & $<0.0001$ & 0.0396 & 1.0000 & -- \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+The Midwest \textbf{differed significantly} from all other regions. The Northeast also differed significantly from both the South and the West, whereas \textbf{no statistically significant difference} was observed between the South and the West.
+
+\subsubsection{Summary}
+
+\begin{itemize}
+	\item The highest average CVR was achieved by the Northeast (0.0284).
+	\item The lowest average CVR was observed for the Midwest (0.0229).
+	\item The Midwest differed significantly from all other regions, while the South and West did not differ significantly from one another.
+\end{itemize}
+
+\subsection{Cost Per Click (CPC)}
+
+\subsubsection{Descriptive Statistics}
+
+\begin{table}[H]
+	\centering
+	\caption{Descriptive statistics for CPC by region.}
+	\begin{tabular}{lcccc}
+		\toprule
+		Region & Mean & Median & Std. Dev. & Count \\
+		\midrule
+		Midwest & 2.2477 & 1.9809 & 1.1166 & 737 \\
+		Northeast & 2.2475 & 1.9919 & 1.0984 & 771 \\
+		South & 2.2374 & 2.0091 & 1.0791 & 785 \\
+		West & 2.2386 & 1.9872 & 1.0686 & 781 \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\subsubsection{Assumption Tests}
+
+\subsubsection{Shapiro--Wilk Test}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lc}
+		\toprule
+		Region & p-value \\
+		\midrule
+		Midwest & $<0.0001$ \\
+		Northeast & $<0.0001$ \\
+		South & $<0.0001$ \\
+		West & $<0.0001$ \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+All regional distributions \textbf{significantly deviated} from normality ($p<0.05$).
+
+\vspace{0.3cm}
+
+\subsubsection{Levene's Test}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lc}
+		\toprule
+		Statistic & Value \\
+		\midrule
+		p-value & 0.9460 \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+The variability of CPC did \textbf{not differ significantly} across regions.
+
+\vspace{0.3cm}
+
+\subsubsection{Kruskal--Wallis Test}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lc}
+		\toprule
+		Statistic & Value \\
+		\midrule
+		H-statistic & 0.0346 \\
+		p-value & 0.9983 \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+The Kruskal--Wallis test indicates \textbf{no statistically significant differences} in CPC across regions.
+
+\subsubsection{Summary}
+
+\begin{itemize}
+	\item The highest average CPC was observed in the Midwest (2.2477), although the regional averages were nearly identical.
+	\item The lowest average CPC was observed in the South (2.2374).
+	\item No statistically significant differences in CPC were found between regions ($p \geq 0.05$).
+\end{itemize}

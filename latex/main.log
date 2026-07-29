@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.11.17)  29 JUL 2026 12:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.11.17)  29 JUL 2026 17:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./document.tex
-(document.tex
+**./main.tex
+(main.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
 (C:\Users\joeva\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
@@ -344,32 +344,54 @@ File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 \Gin@req@height=\dimen183
 \Gin@req@width=\dimen184
 )
+(C:\Users\joeva\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
+)
+
+! LaTeX Error: Option clash for package hyperref.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.22 
+     
+The package hyperref has already been loaded with options:
+  []
+There has now been an attempt to load it with options
+  [ colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=blue ]
+Adding the global options:
+  , colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=blue 
+to your \documentclass declaration may fix this.
+Try typing  <return>  to proceed.
+
+
 (C:\Users\joeva\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count296
 \l__pdf_internal_box=\box59
-) (document.aux)
-\openout1 = `document.aux'.
+) (main.aux)
+\openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -405,10 +427,10 @@ LaTeX Font Info:    ... okay on input line 23.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 23.
-(document.out) (document.out)
+Package hyperref Info: Link coloring OFF on input line 28.
+(main.out) (main.out)
 \@outlinefile=\write3
-\openout3 = `document.out'.
+\openout3 = `main.out'.
 
 
 (C:\Users\joeva\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
@@ -439,62 +461,147 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 
 
 {C:/Users/joeva/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-[2]
-Chapter 1.
-<images/check_datatype.jpg, id=94, 448.67625pt x 374.14781pt>
+[2
+
+] (main.toc [3])
+\tf@toc=\write4
+\openout4 = `main.toc'.
+
+ [4] (task1.tex [5
+
+] [6
+
+]
+Task 1.
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 7.
+
+[7] [8]
+<images/roas_summary.jpg, id=268, 999.735pt x 578.16pt>
+File: images/roas_summary.jpg Graphic file (type jpg)
+<use images/roas_summary.jpg>
+Package pdftex.def Info: images/roas_summary.jpg  used on input line 111.
+(pdftex.def)             Requested size: 469.75502pt x 271.66466pt.
+ [9 <./images/roas_summary.jpg>]) (task2.tex [10]
+Task 2.
+[11
+
+]
+<images/ROAS_by_platform.jpg, id=289, 666.23906pt x 521.69907pt>
+File: images/ROAS_by_platform.jpg Graphic file (type jpg)
+<use images/ROAS_by_platform.jpg>
+Package pdftex.def Info: images/ROAS_by_platform.jpg  used on input line 69.
+(pdftex.def)             Requested size: 140.92793pt x 110.34811pt.
+ [12 <./images/ROAS_by_platform.jpg>]
+<images/CTR_by_platform.jpg, id=297, 647.41875pt x 547.2947pt>
+File: images/CTR_by_platform.jpg Graphic file (type jpg)
+<use images/CTR_by_platform.jpg>
+Package pdftex.def Info: images/CTR_by_platform.jpg  used on input line 83.
+(pdftex.def)             Requested size: 140.92793pt x 119.12749pt.
+<images/CVR_by_platform.jpg, id=299, 648.17157pt x 525.46312pt>
+File: images/CVR_by_platform.jpg Graphic file (type jpg)
+<use images/CVR_by_platform.jpg>
+Package pdftex.def Info: images/CVR_by_platform.jpg  used on input line 101.
+(pdftex.def)             Requested size: 140.92793pt x 114.24721pt.
+ [13 <./images/CTR_by_platform.jpg> <./images/CVR_by_platform.jpg>]
+<images/CPC_by_platform.jpg, id=308, 660.21657pt x 531.48563pt>
+File: images/CPC_by_platform.jpg Graphic file (type jpg)
+<use images/CPC_by_platform.jpg>
+Package pdftex.def Info: images/CPC_by_platform.jpg  used on input line 118.
+(pdftex.def)             Requested size: 140.92793pt x 113.44809pt.
+ [14 <./images/CPC_by_platform.jpg>]
+<images/ROAS_by_region.jpg, id=317, 755.82375pt x 576.65437pt>
+File: images/ROAS_by_region.jpg Graphic file (type jpg)
+<use images/ROAS_by_region.jpg>
+Package pdftex.def Info: images/ROAS_by_region.jpg  used on input line 162.
+(pdftex.def)             Requested size: 187.89914pt x 143.35371pt.
+<images/CTR_by_region.jpg, id=319, 714.41907pt x 576.65437pt>
+File: images/CTR_by_region.jpg Graphic file (type jpg)
+<use images/CTR_by_region.jpg>
+Package pdftex.def Info: images/CTR_by_region.jpg  used on input line 177.
+(pdftex.def)             Requested size: 187.89914pt x 151.66pt.
+
+Overfull \hbox (3.1294pt too wide) in paragraph at lines 182--183
+[]\OT1/cmr/m/n/10.95 Statistical test-ing found no sig-nif-i-cant dif-fer-ences
+ in CTR among the four re-gions (Ap-pendix []C.1[]).
+ []
+
+[15 <./images/ROAS_by_region.jpg> <./images/CTR_by_region.jpg>]
+<images/CVR_by_region.jpg, id=327, 694.84593pt x 576.65437pt>
+File: images/CVR_by_region.jpg Graphic file (type jpg)
+<use images/CVR_by_region.jpg>
+Package pdftex.def Info: images/CVR_by_region.jpg  used on input line 190.
+(pdftex.def)             Requested size: 187.89914pt x 155.93633pt.
+<images/CPC_by_region.jpg, id=329, 714.41907pt x 569.87906pt>
+File: images/CPC_by_region.jpg Graphic file (type jpg)
+<use images/CPC_by_region.jpg>
+Package pdftex.def Info: images/CPC_by_region.jpg  used on input line 205.
+(pdftex.def)             Requested size: 187.89914pt x 149.8781pt.
+
+Overfull \hbox (11.34192pt too wide) in paragraph at lines 210--211
+[]\OT1/cmr/m/n/10.95 Statistical test-ing con-firmed that no sig-nif-i-cant re-
+gional dif-fer-ences ex-isted in CPC (Ap-pendix []C.1[]).
+ []
+
+[16 <./images/CVR_by_region.jpg> <./images/CPC_by_region.jpg>]) [17]
+(task1_appendix.tex [18
+
+
+]
+Appendix A.
+<images/check_datatype.jpg, id=346, 448.67625pt x 374.14781pt>
 File: images/check_datatype.jpg Graphic file (type jpg)
 <use images/check_datatype.jpg>
-Package pdftex.def Info: images/check_datatype.jpg  used on input line 48.
+Package pdftex.def Info: images/check_datatype.jpg  used on input line 19.
 (pdftex.def)             Requested size: 211.38832pt x 176.27196pt.
-[3
-
- <./images/check_datatype.jpg>]
-<images/duplicate_records.jpg, id=103, 688.07062pt x 126.4725pt>
+[19 <./images/check_datatype.jpg>]
+<images/duplicate_records.jpg, id=353, 688.07062pt x 126.4725pt>
 File: images/duplicate_records.jpg Graphic file (type jpg)
 <use images/duplicate_records.jpg>
-Package pdftex.def Info: images/duplicate_records.jpg  used on input line 60.
+Package pdftex.def Info: images/duplicate_records.jpg  used on input line 31.
 (pdftex.def)             Requested size: 375.80544pt x 69.0757pt.
-<images/revenue_missing_values.jpg, id=106, 1394.96156pt x 402.75468pt>
+<images/revenue_missing_values.jpg, id=356, 1394.96156pt x 402.75468pt>
 File: images/revenue_missing_values.jpg Graphic file (type jpg)
 <use images/revenue_missing_values.jpg>
 Package pdftex.def Info: images/revenue_missing_values.jpg  used on input line 
-81.
+52.
 (pdftex.def)             Requested size: 469.75502pt x 135.62578pt.
-<images/drop_missing_revenue.jpg, id=108, 1385.92781pt x 201.75375pt>
+<images/drop_missing_revenue.jpg, id=358, 1385.92781pt x 201.75375pt>
 File: images/drop_missing_revenue.jpg Graphic file (type jpg)
 <use images/drop_missing_revenue.jpg>
-Package pdftex.def Info: images/drop_missing_revenue.jpg  used on input line 92
+Package pdftex.def Info: images/drop_missing_revenue.jpg  used on input line 63
 .
 (pdftex.def)             Requested size: 469.75502pt x 68.38293pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/video_completion_missing.jpg, id=109, 488.57532pt x 370.38374pt>
+<images/video_completion_missing.jpg, id=359, 488.57532pt x 370.38374pt>
 File: images/video_completion_missing.jpg Graphic file (type jpg)
 <use images/video_completion_missing.jpg>
 Package pdftex.def Info: images/video_completion_missing.jpg  used on input lin
-e 104.
+e 75.
 (pdftex.def)             Requested size: 211.38832pt x 160.25093pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/filtered_video_completion_missing.jpg, id=111, 560.0925pt x 398.23781pt
+<images/filtered_video_completion_missing.jpg, id=361, 560.0925pt x 398.23781pt
 >
 File: images/filtered_video_completion_missing.jpg Graphic file (type jpg)
 <use images/filtered_video_completion_missing.jpg>
 Package pdftex.def Info: images/filtered_video_completion_missing.jpg  used on 
-input line 116.
+input line 87.
 (pdftex.def)             Requested size: 211.38832pt x 150.305pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[4 <./images/duplicate_records.jpg> <./images/revenue_missing_values.jpg>]
-<images/0clicks_non0purchase.jpg, id=121, 1395.71437pt x 362.85562pt>
+[20 <./images/duplicate_records.jpg> <./images/revenue_missing_values.jpg>]
+<images/0clicks_non0purchase.jpg, id=370, 1395.71437pt x 362.85562pt>
 File: images/0clicks_non0purchase.jpg Graphic file (type jpg)
 <use images/0clicks_non0purchase.jpg>
-Package pdftex.def Info: images/0clicks_non0purchase.jpg  used on input line 13
-8.
+Package pdftex.def Info: images/0clicks_non0purchase.jpg  used on input line 10
+9.
 (pdftex.def)             Requested size: 375.80544pt x 97.70102pt.
 
 
@@ -503,80 +610,79 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 Underfull \vbox (badness 1168) has occurred while \output is active []
 
- [5 <./images/drop_missing_revenue.jpg> <./images/video_completion_missing.jpg>
-]
-<images/0impressions.jpg, id=129, 1395.71437pt x 385.44pt>
+ [21 <./images/drop_missing_revenue.jpg> <./images/video_completion_missing.jpg
+>]
+<images/0impressions.jpg, id=378, 1395.71437pt x 385.44pt>
 File: images/0impressions.jpg Graphic file (type jpg)
 <use images/0impressions.jpg>
-Package pdftex.def Info: images/0impressions.jpg  used on input line 165.
+Package pdftex.def Info: images/0impressions.jpg  used on input line 136.
 (pdftex.def)             Requested size: 375.80544pt x 103.782pt.
- [6 <./images/filtered_video_completion_missing.jpg> <./images/0clicks_non0purc
-hase.jpg> <./images/0impressions.jpg>]
-<images/0impressionscount.jpg, id=139, 581.92406pt x 211.54031pt>
+ [22 <./images/filtered_video_completion_missing.jpg> <./images/0clicks_non0pur
+chase.jpg> <./images/0impressions.jpg>]
+<images/0impressionscount.jpg, id=388, 581.92406pt x 211.54031pt>
 File: images/0impressionscount.jpg Graphic file (type jpg)
 <use images/0impressionscount.jpg>
-Package pdftex.def Info: images/0impressionscount.jpg  used on input line 175.
+Package pdftex.def Info: images/0impressionscount.jpg  used on input line 146.
 (pdftex.def)             Requested size: 375.80544pt x 136.61513pt.
-<images/box_plotsjpg.jpg, id=141, 1242.14063pt x 639.13782pt>
+<images/box_plotsjpg.jpg, id=390, 1242.14063pt x 639.13782pt>
 File: images/box_plotsjpg.jpg Graphic file (type jpg)
 <use images/box_plotsjpg.jpg>
-Package pdftex.def Info: images/box_plotsjpg.jpg  used on input line 184.
+Package pdftex.def Info: images/box_plotsjpg.jpg  used on input line 155.
 (pdftex.def)             Requested size: 469.75502pt x 241.7046pt.
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 190.
-<images/CPM_mismatch_list.jpg, id=143, 797.98125pt x 390.70969pt>
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 161.
+<images/CPM_mismatch_list.jpg, id=392, 797.98125pt x 390.70969pt>
 File: images/CPM_mismatch_list.jpg Graphic file (type jpg)
 <use images/CPM_mismatch_list.jpg>
-Package pdftex.def Info: images/CPM_mismatch_list.jpg  used on input line 195.
+Package pdftex.def Info: images/CPM_mismatch_list.jpg  used on input line 166.
 (pdftex.def)             Requested size: 469.75502pt x 230.004pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[7 <./images/0impressionscount.jpg> <./images/box_plotsjpg.jpg>]
-<images/severe_spend_outlier_list.jpg, id=154, 1227.83719pt x 285.31593pt>
+ [23 <./images/0impressionscount.jpg> <./images/box_plotsjpg.jpg>]
+<images/severe_spend_outlier_list.jpg, id=402, 1227.83719pt x 285.31593pt>
 File: images/severe_spend_outlier_list.jpg Graphic file (type jpg)
 <use images/severe_spend_outlier_list.jpg>
 Package pdftex.def Info: images/severe_spend_outlier_list.jpg  used on input li
-ne 204.
+ne 175.
 (pdftex.def)             Requested size: 469.75502pt x 109.15692pt.
-<images/severe_spend_outlier_boxplot.jpg, id=155, 1333.98375pt x 475.7775pt>
+<images/severe_spend_outlier_boxplot.jpg, id=403, 1333.98375pt x 475.7775pt>
 File: images/severe_spend_outlier_boxplot.jpg Graphic file (type jpg)
 <use images/severe_spend_outlier_boxplot.jpg>
 Package pdftex.def Info: images/severe_spend_outlier_boxplot.jpg  used on input
- line 213.
+ line 184.
 (pdftex.def)             Requested size: 469.75502pt x 167.54097pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[8 <./images/CPM_mismatch_list.jpg> <./images/severe_spend_outlier_list.jpg>]
-[9 <./images/severe_spend_outlier_boxplot.jpg>] [10]
-<images/roas_summary.jpg, id=174, 999.735pt x 578.16pt>
-File: images/roas_summary.jpg Graphic file (type jpg)
-<use images/roas_summary.jpg>
-Package pdftex.def Info: images/roas_summary.jpg  used on input line 339.
-(pdftex.def)             Requested size: 469.75502pt x 271.66466pt.
- [11 <./images/roas_summary.jpg>] [12]
-Chapter 2.
-[13
+[24 <./images/CPM_mismatch_list.jpg> <./images/severe_spend_outlier_list.jpg>])
+(appendix_channel_performance_analysis.tex [25 <./images/severe_spend_outlier_b
+oxplot.jpg>] [26
 
-] [14] (document.aux)
+]
+Appendix B.
+[27] [28] [29] [30] [31]) (appendix_regional_performance_analysis.tex [32]
+Appendix C.
+[33
+
+]
+Underfull \vbox (badness 1057) has occurred while \output is active []
+
+ [34]
+[35] [36] [37]) [38] (main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
-Package rerunfilecheck Info: File `document.out' has not changed.
-(rerunfilecheck)             Checksum: 62884378E54863C5F5B54B7BE1479F8A;3192.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 9E337E87FA01EAA4EEA0307CDD66FB96;8480.
  ) 
 Here is how much of TeX's memory you used:
- 10589 strings out of 474486
- 166935 string characters out of 5743754
- 1934542 words of memory out of 5000000
- 32696 multiletter control sequences out of 15000+600000
- 565952 words of font info for 63 fonts, out of 8000000 for 9000
+ 10905 strings out of 474486
+ 173814 string characters out of 5743754
+ 1937542 words of memory out of 5000000
+ 32863 multiletter control sequences out of 15000+600000
+ 566558 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,10n,79p,501b,559s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,10n,79p,520b,578s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\joeva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1095.pk><C:/Users/joeva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb><C:/Users/joeva/AppData/Local/Programs/MiKTeX/fonts/type1/publ
@@ -585,14 +691,15 @@ ype1/public/amsfonts/cm/cmmi10.pfb><C:/Users/joeva/AppData/Local/Programs/MiKTe
 X/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/joeva/AppData/Local/Progra
 ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/joeva/AppData/Loca
 l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/joeva/AppD
-ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Users/j
-oeva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C
-:/Users/joeva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti
-10.pfb><C:/Users/joeva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
-s/cm/cmtt10.pfb>
-Output written on document.pdf (14 pages, 2002271 bytes).
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/joe
+va/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/
+Users/joeva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10
+.pfb><C:/Users/joeva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
+cm/cmti10.pfb><C:/Users/joeva/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmtt10.pfb>
+Output written on main.pdf (38 pages, 2507954 bytes).
 PDF statistics:
- 261 PDF objects out of 1000 (max. 8388607)
- 60 named destinations out of 1000 (max. 500000)
- 223 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 634 PDF objects out of 1000 (max. 8388607)
+ 186 named destinations out of 1000 (max. 500000)
+ 463 words of extra memory for PDF output out of 10000 (max. 10000000)
 

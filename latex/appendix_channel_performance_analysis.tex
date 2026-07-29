@@ -1,0 +1,401 @@
+
+\chapter{Statistical Test Results of Metrics across Platforms}
+
+
+This appendix presents the complete statistical test results supporting the analyses discussed in the main report.
+
+\section{Platform Performance Analysis}\label{appendix:platform_performance_analysis}
+
+\subsection{Return on Advertising Spend (ROAS)}\label{appendix:platform_performance_analysis_ROAS}
+
+\subsubsection{Descriptive Statistics}
+
+\begin{table}[H]
+	\centering
+	\caption{Descriptive statistics for ROAS by platform.}
+	\begin{tabular}{lcccc}
+		\toprule
+		Platform & Mean & Median & Std. Dev. & Count \\
+		\midrule
+		Facebook & 0.8162 & 0.7499 & 0.4225 & 1054 \\
+		Google   & 1.1057 & 0.9456 & 0.6495 & 1053 \\
+		TikTok   & 0.9602 & 0.8625 & 0.4950 & 1066 \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\subsubsection{Assumption Tests}
+
+\subsubsection{Shapiro--Wilk Test}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lc}
+		\toprule
+		Platform & p-value \\
+		\midrule
+		Facebook & $<0.0001$ \\
+		Google & $<0.0001$ \\
+		TikTok & $<0.0001$ \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+All platform distributions significantly deviated from normality ($p<0.05$).
+
+\vspace{0.3cm}
+
+\subsubsection{Levene's Test}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lc}
+		\toprule
+		Statistic & Value \\
+		\midrule
+		p-value & $<0.0001$ \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+The variability of \textbf{ROAS differed significantly} across platforms.
+
+\vspace{0.3cm}
+
+\subsubsection{Kruskal--Wallis Test}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lcc}
+		\toprule
+		Statistic & Value \\
+		\midrule
+		H-statistic & 106.6989 \\
+		p-value & $<0.0001$ \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+The Kruskal--Wallis test indicates statistically significant differences in ROAS across advertising platforms.
+
+\vspace{0.3cm}
+
+\subsubsection{Dunn Post-hoc Test}
+
+\begin{table}[H]
+	\centering
+	\caption{Pairwise Dunn test p-values (Bonferroni adjusted).}
+	\begin{tabular}{lccc}
+		\toprule
+		& Facebook & Google & TikTok \\
+		\midrule
+		Facebook & -- & $<0.0001$ & $<0.0001$ \\
+		Google & $<0.0001$ & -- & 0.0002 \\
+		TikTok & $<0.0001$ & 0.0002 & -- \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\subsubsection{Summary}
+\begin{itemize}
+	\item The highest average ROAS was achieved by Google (1.1057).
+	\item The lowest average ROAS was observed for FB (0.8162).
+	\item Differences of ROAS between platforms are statistically significant ($p<0.05$).
+\end{itemize}
+
+\subsection{Click-Through Rate (CTR)} \label{appendix:platform_performance_analysis_CTR}
+
+\subsubsection{Descriptive Statistics}
+
+\begin{table}[H]
+	\centering
+	\caption{Descriptive statistics for CTR by platform.}
+	\begin{tabular}{lcccc}
+		\toprule
+		Platform & Mean & Median & Std. Dev. & Count \\
+		\midrule
+		Facebook & 0.0057 & 0.0056 & 0.0021 & 1054 \\
+		Google   & 0.0100 & 0.0098 & 0.0052 & 1053 \\
+		TikTok   & 0.0063 & 0.0062 & 0.0018 & 1066 \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\subsubsection{Assumption Tests}
+
+\subsubsection{Shapiro--Wilk Test}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lc}
+		\toprule
+		Platform & p-value \\
+		\midrule
+		Facebook & $<0.0001$ \\
+		Google & $<0.0001$ \\
+		TikTok & $<0.0001$ \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+All platform distributions significantly deviated from normality ($p<0.05$).
+
+\vspace{0.3cm}
+
+\subsubsection{Levene's Test}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lc}
+		\toprule
+		Statistic & Value \\
+		\midrule
+		p-value & $<0.0001$ \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+The variability of CTR\textbf{ differed significantly across platforms}.
+
+\vspace{0.3cm}
+
+\subsubsection{Kruskal--Wallis Test}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lc}
+		\toprule
+		Statistic & Value \\
+		\midrule
+		H-statistic & 634.6820 \\
+		p-value & $<0.0001$ \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+The Kruskal--Wallis test indicates statistically significant differences in CTR across advertising platforms.
+
+\vspace{0.3cm}
+
+\subsubsection{Dunn Post-hoc Test}
+
+\begin{table}[H]
+	\centering
+	\caption{Pairwise Dunn test p-values (Bonferroni adjusted).}
+	\begin{tabular}{lccc}
+		\toprule
+		& Facebook & Google & TikTok \\
+		\midrule
+		Facebook & -- & $<0.0001$ & $<0.0001$ \\
+		Google & $<0.0001$ & -- & $<0.0001$ \\
+		TikTok & $<0.0001$ & $<0.0001$ & -- \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\subsubsection{Summary}
+\begin{itemize}
+	\item The highest average CTR was achieved by Google (0.0100).
+	\item The lowest average CTR was observed for FB (0.0057).
+	\item Differences of CTR between platforms are statistically significant ($p<0.05$).
+\end{itemize}
+
+\subsection{Conversion Rate (CVR)} \label{appendix:platform_performance_analysis_CVR}
+
+\subsubsection{Descriptive Statistics}
+
+\begin{table}[H]
+	\centering
+	\caption{Descriptive statistics for CVR by platform.}
+	\begin{tabular}{lcccc}
+		\toprule
+		Platform & Mean & Median & Std. Dev. & Count \\
+		\midrule
+		Facebook & 0.0287 & 0.0277 & 0.0076 & 1054 \\
+		Google   & 0.0254 & 0.0254 & 0.0082 & 954 \\
+		TikTok   & 0.0254 & 0.0258 & 0.0081 & 1066 \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\subsubsection{Assumption Tests}
+
+\subsubsection{Shapiro--Wilk Test}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lc}
+		\toprule
+		Platform & p-value \\
+		\midrule
+		Facebook & $<0.0001$ \\
+		Google & $<0.0001$ \\
+		TikTok & $<0.0001$ \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+All platform distributions \textbf{significantly deviated from normality} ($p<0.05$).
+
+\vspace{0.3cm}
+
+\subsubsection{Levene's Test}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lc}
+		\toprule
+		Statistic & Value \\
+		\midrule
+		p-value & 0.0072 \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+The variability of CVR \textbf{differed significantly across platforms}.
+
+\vspace{0.3cm}
+
+\subsubsection{Kruskal--Wallis Test}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lc}
+		\toprule
+		Statistic & Value \\
+		\midrule
+		H-statistic & 96.7108 \\
+		p-value & $<0.0001$ \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+The Kruskal--Wallis test indicates \textbf{that at least one platform differs significantly} in CVR.
+
+\vspace{0.3cm}
+
+\subsubsection{Dunn Post-hoc Test}
+
+\begin{table}[H]
+	\centering
+	\caption{Pairwise Dunn test p-values (Bonferroni adjusted).}
+	\begin{tabular}{lccc}
+		\toprule
+		& Facebook & Google & TikTok \\
+		\midrule
+		Facebook & -- & $<0.0001$ & $<0.0001$ \\
+		Google & $<0.0001$ & -- & 1.0000 \\
+		TikTok & $<0.0001$ & 1.0000 & -- \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+Facebook differed significantly from both Google and TikTok, whereas \textbf{no statistically significant difference} was observed between Google and TikTok.
+
+\subsubsection{Summary}
+
+\begin{itemize}
+	\item The \textbf{highest average CVR} was achieved by \textbf{Facebook} (0.0287).
+	\item The \textbf{lowest average CVR} was observed for \textbf{Google} (0.0254), although Google and TikTok had nearly identical average CVRs.
+	\item \textbf{Facebook differed significantly} from both Google and TikTok, while \textbf{no statistically significant difference} was observed between Google and TikTok.
+\end{itemize}
+
+\subsection{Cost Per Click (CPC)}\label{appendix:platform_performance_analysis_CPC}
+
+\subsubsection{Descriptive Statistics}
+
+\begin{table}[H]
+	\centering
+	\caption{Descriptive statistics for CPC by platform.}
+	\begin{tabular}{lcccc}
+		\toprule
+		Platform & Mean & Median & Std. Dev. & Count \\
+		\midrule
+		Facebook & 2.8374 & 2.5049 & 1.3116 & 1054 \\
+		Google   & 1.8747 & 1.5936 & 0.9076 & 954 \\
+		TikTok   & 1.9840 & 1.8452 & 0.6718 & 1066 \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\subsubsection{Assumption Tests}
+
+\subsubsection{Shapiro--Wilk Test}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lc}
+		\toprule
+		Platform & p-value \\
+		\midrule
+		Facebook & $<0.0001$ \\
+		Google & $<0.0001$ \\
+		TikTok & $<0.0001$ \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+All platform distributions significantly deviated from normality ($p<0.05$).
+
+\vspace{0.3cm}
+
+\subsubsection{Levene's Test}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lc}
+		\toprule
+		Statistic & Value \\
+		\midrule
+		p-value & $<0.0001$ \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+The variability of \textbf{CPC differed significantly} across platforms.
+
+\vspace{0.3cm}
+
+\subsubsection{Kruskal--Wallis Test}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lc}
+		\toprule
+		Statistic & Value \\
+		\midrule
+		H-statistic & 447.1995 \\
+		p-value & $<0.0001$ \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+The Kruskal--Wallis test indicates statistically significant differences in CPC across advertising platforms.
+
+\vspace{0.3cm}
+
+\subsubsection{Dunn Post-hoc Test}
+
+\begin{table}[H]
+	\centering
+	\caption{Pairwise Dunn test p-values (Bonferroni adjusted).}
+	\begin{tabular}{lccc}
+		\toprule
+		& Facebook & Google & TikTok \\
+		\midrule
+		Facebook & -- & $<0.0001$ & $<0.0001$ \\
+		Google & $<0.0001$ & -- & $<0.0001$ \\
+		TikTok & $<0.0001$ & $<0.0001$ & -- \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\subsubsection{Summary}
+
+\begin{itemize}
+	\item The highest average CPC was achieved by Facebook (2.8374).
+	\item The lowest average CPC was observed for Google (1.8747).
+	\item Differences of CPC between platforms are statistically significant ($p<0.05$).
+\end{itemize}
+
+

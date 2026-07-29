@@ -1,0 +1,77 @@
+\documentclass[11pt]{book}
+\usepackage{titlesec}
+
+
+{\Huge}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{setspace}
+
+\usepackage[
+colorlinks=true,
+linkcolor=blue,
+citecolor=blue,
+urlcolor=blue
+]{hyperref}
+
+
+\title{Data Analyst Technical Assessment}
+\author{Analyst: Joevan M. Aliman}
+\date{\today}
+
+\begin{document}
+	
+	\maketitle
+	\tableofcontents
+	
+\chapter*{About This Report}
+\addcontentsline{toc}{chapter}{About This Report}
+
+This report presents the results of a technical assessment of a digital advertising campaign dataset. The objective of the analysis is to evaluate campaign performance, identify the factors associated with advertising effectiveness, and provide data-driven recommendations to improve Return on Advertising Spend (ROAS).
+
+To accommodate both business stakeholders and technical reviewers, the report is organized into two complementary sections.
+
+\begin{itemize}
+	\item \textbf{Main Report} — Presents the key business findings, interpretations, and recommendations in a concise, stakeholder-focused manner. Statistical results are summarized only where necessary to support business decisions.
+	
+	\item \textbf{Technical Appendices} — Provide the detailed analytical procedures supporting the main report, including the complete data quality assessment, data cleaning methodology, exploratory analyses, statistical assumption checks, hypothesis testing, and post-hoc analysis.
+\end{itemize}
+
+Readers interested primarily in the business implications may focus on the main report, while readers wishing to review the analytical methodology and supporting evidence may refer to the appendices.
+
+This document also includes interactive cross-references. Figure, table, equation, section, and appendix references are hyperlinked throughout the report, allowing readers to navigate directly to the referenced content by clicking the corresponding reference.
+
+\vspace{0.5cm}
+
+\textbf{Software Used}
+
+\begin{itemize}
+	\item Python 3.13.5 (data cleaning, statistical analysis, and data processing)
+	\item Visual Studio Code (Python development environment)
+	\item Microsoft Power BI (data visualization and dashboard development)
+	\item TeXstudio (report preparation using \LaTeX)
+\end{itemize}
+\renewcommand{\chaptername}{Task}
+\input{task1}
+\input{task2}
+
+
+\appendix
+\renewcommand{\chaptername}{Appendix}
+
+\clearpage
+\singlespacing
+
+
+\addcontentsline{toc}{chapter}{Appendices}
+\input{task1_appendix}
+\input{appendix_channel_performance_analysis}
+\input{appendix_regional_performance_analysis}
+
+\end{document}

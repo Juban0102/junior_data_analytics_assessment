@@ -1,0 +1,230 @@
+\chapter{Performance Analysis}
+
+The exploratory analysis identified observable differences in performance metrics across multiple business dimensions, including advertising platform, region, creative type, product category, and target audience. 
+
+However, descriptive statistics alone cannot determine whether these observed differences represent genuine performance differences or are simply the result of random variation. Therefore, statistical significance testing was performed before drawing business conclusions.
+
+\section{Statistical Methodology}
+
+Preliminary assessment of the data showed that the distributions of several performance metrics, particularly ROAS, deviated significantly from normality. Such behavior is common in advertising datasets, where campaign performance is often positively skewed due to a small number of exceptionally high-performing campaigns.
+
+Consequently, non-parametric statistical methods were adopted where appropriate.
+
+The following statistical tests were used throughout the analysis:
+
+\begin{enumerate}
+	
+	\item \textbf{Shapiro--Wilk Test}
+	
+	Used to assess whether the distribution of each performance metric follows a normal distribution. The results determined whether parametric statistical methods were appropriate for subsequent analyses.
+	
+	\textbf{Statistical Question:}
+	\begin{quote}
+		\textit{Do the observed performance metrics satisfy the assumptions required for parametric statistical tests?}
+	\end{quote}
+	
+	\item \textbf{Levene's Test}
+	
+	Used to determine whether the variability (consistency) of a performance metric differs significantly across groups.
+	
+	\textbf{Business Question Answered:}
+	\begin{quote}
+		\textit{Which business groups deliver more consistent advertising performance, and which exhibit greater variability or unpredictability?}
+	\end{quote}
+	
+	\item \textbf{Kruskal--Wallis Test}
+	
+	A non-parametric alternative to one-way ANOVA used to determine whether the distribution of a performance metric differs significantly across multiple groups. This test was selected because the normality assumption required for ANOVA was not satisfied.
+	
+	\textbf{Business Question Answered:}
+	\begin{quote}
+		\textit{Do the observed differences in campaign performance across business groups (e.g., platforms, regions, creative types, product categories, and target audiences) represent genuine differences, or are they likely due to random variation?}
+	\end{quote}
+	
+	\item \textbf{Dunn's Post-hoc Test}
+	
+	Performed following a statistically significant Kruskal--Wallis test to identify which specific groups differ from one another while controlling for multiple comparisons.
+	
+	\textbf{Business Question Answered:}
+	\begin{quote}
+		\textit{If significant differences exist, which specific business groups differ in their advertising performance?}
+	\end{quote}
+	
+\end{enumerate}
+
+Together, these statistical procedures provide a systematic framework for validating assumptions, assessing performance consistency, determining whether differences are statistically significant, and identifying the specific groups responsible for those differences.
+
+\section{Channel Performance Analysis}
+
+The exploratory analysis revealed observable differences in advertising performance across Facebook, Google, and TikTok. 
+
+To determine whether these differences reflected genuine performance variation rather than random fluctuations, statistical significance testing was performed. A complete summary of the statistical analyses, including assumption checks, Kruskal--Wallis tests, and Dunn's post-hoc comparisons, is provided in Appendix~\ref{appendix:platform_performance_analysis}.
+
+\subsection{Return on Advertising Spend (ROAS)}
+
+Return on Advertising Spend (ROAS) was selected as the primary measure of advertising profitability. Among the three platforms, Google achieved the highest average ROAS (1.106), followed by TikTok (0.960), while Facebook recorded the lowest average ROAS (0.816) as shown in \textit{Fig. \ref{fig:ros_by_platform}}. 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.3\textwidth]{images/ROAS_by_platform.jpg}
+	\caption{ROAS by Platform}
+	\label{fig:ros_by_platform}
+\end{figure}
+
+
+Statistical testing confirmed that \textbf{these differences were significant} (Appendix~\ref{appendix:platform_performance_analysis_ROAS}), indicating that Google consistently generated greater revenue for each dollar invested in advertising than the other platforms.
+
+\subsection{Click-Through Rate (CTR)}
+
+Click-Through Rate (CTR) was analyzed to evaluate each platform's ability to attract user engagement. Google achieved the highest average CTR (1.00\%), substantially outperforming both TikTok (0.63\%) and Facebook (0.57\%). 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.3\textwidth]{images/CTR_by_platform.jpg}
+	\caption{CTR by Platform}
+	\label{fig:CTR_by_platform}
+\end{figure}
+
+The statistical analysis confirmed that \textbf{these differences were significant} (Appendix~\ref{appendix:platform_performance_analysis_CTR}). These findings suggest that Google advertisements were more effective at capturing user attention and encouraging engagement.
+
+
+
+
+
+
+\subsection{Conversion Rate (CVR)}
+
+Conversion Rate (CVR) was used to measure each platform's effectiveness in converting user engagement into purchases. Facebook recorded the highest average CVR (2.87\%), while Google and TikTok achieved nearly identical conversion rates (2.54\%). 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.3\textwidth]{images/CVR_by_platform.jpg}
+	\caption{CVR by Platform}
+	\label{fig:CVR_by_platform}
+\end{figure}
+
+
+Statistical testing showed that \textbf{Facebook converted clicks into purchases more effectively than the other two platforms}, whereas \textbf{no statistically significant difference was observed between Google and TikTok} (Appendix~\ref{appendix:platform_performance_analysis_CVR}). 
+
+Although Facebook demonstrated stronger conversion efficiency, this metric should be interpreted alongside advertising cost and overall profitability.
+
+
+\subsection{Cost Per Click (CPC)}
+
+Cost Per Click (CPC) measures the average advertising cost required to generate a user click. Google achieved the lowest average CPC (\$1.87), followed by TikTok (\$1.98), while Facebook incurred the highest average CPC (\$2.84). 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.3\textwidth]{images/CPC_by_platform.jpg}
+	\caption{CPC by Platform}
+	\label{fig:CPC_by_platform}
+\end{figure}
+
+Statistical testing confirmed that the differences among all three platforms were significant (Appendix~\ref{appendix:platform_performance_analysis_CPC}). These results indicate that Google acquired user engagement more cost-effectively than either Facebook or TikTok.
+
+\subsection{Overall Platform Performance}
+
+Taken together, the four performance metrics indicate that \textbf{Google is currently the strongest-performing advertising platform} while Facebook is the weakest-performing advertising platform. 
+
+\begin{itemize}
+
+
+	\item Google generated the highest return on advertising investment(ROAS), attracted the greatest level of user engagement(CTR), and acquired clicks at the lowest cost(CPC). 
+
+	\item Although Facebook achieved the highest conversion rate, this advantage was offset by its substantially higher acquisition costs and lower overall ROAS. 
+
+ 	\item TikTok demonstrated balanced performance across all metrics but did not outperform Google in any of the primary business measures.
+
+	\item From a business perspective, Google currently delivers the greatest overall value and represents the strongest candidate for additional advertising investment.
+
+	\item Conversely, Facebook should not necessarily receive additional budget until improvements are made to reduce acquisition costs while maintaining its strong conversion performance. 
+
+	\item TikTok represents a stable intermediate option that may benefit from further optimization but currently offers lower overall returns than Google.
+
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Regional Performance Analysis}
+
+The exploratory assessment suggested that advertising performance varied across geographic regions. 
+
+A complete summary of the statistical analyses, including assumption checks, Kruskal--Wallis tests, and Dunn's post-hoc comparisons, is provided in Appendix \ref{appendix:regional_performance_analysis}.
+
+\subsection{Return on Advertising Spend (ROAS)}
+
+Return on Advertising Spend (ROAS) was used to evaluate advertising profitability across the four regions. The Northeast achieved the highest average ROAS (1.033), followed closely by the West (1.008), while the Midwest recorded the lowest average ROAS (0.834), as shown in \textit{Fig. \ref{fig:ROAS_by_region}}.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.4\textwidth]{images/ROAS_by_region.jpg}
+	\caption{ROAS by Region}
+	\label{fig:ROAS_by_region}
+\end{figure}
+
+
+
+Statistical testing confirmed that the Midwest performed significantly worse than the other three regions (Appendix \ref{appendix:regional_performance_analysis}). However, no statistically significant differences were observed among the Northeast, South, and West. These findings suggest that the Midwest consistently generated lower financial returns from advertising investment.
+
+\subsection{Click-Through Rate (CTR)}
+
+Click-Through Rate (CTR) was analyzed to assess audience engagement across regions. Although the Midwest recorded the highest average CTR (0.74\%) and the Northeast the lowest (0.72\%), these differences were minimal.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.4\textwidth]{images/CTR_by_region.jpg}
+	\caption{CTR by Region}
+	\label{fig:CTR_by_region}
+\end{figure}
+
+Statistical testing found no significant differences in CTR among the four regions (Appendix~\ref{appendix:regional_performance_analysis}). This indicates that advertisements attracted similar levels of user engagement regardless of geographic region.
+
+\subsection{Conversion Rate (CVR)}
+
+Conversion Rate (CVR) was used to evaluate each region's ability to convert user engagement into purchases. The Northeast achieved the highest average CVR (2.84\%), while the Midwest recorded the lowest average CVR (2.29\%).
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.4\textwidth]{images/CVR_by_region.jpg}
+	\caption{CVR by Region}
+	\label{fig:CVR_by_region}
+\end{figure}
+
+Statistical testing confirmed that the Midwest converted significantly fewer clicks into purchases than every other region (Appendix~\ref{appendix:regional_performance_analysis}). The Northeast also achieved significantly higher conversion rates than both the South and West, whereas no statistically significant difference was observed between the South and West.
+
+These findings indicate that regional differences are driven primarily by conversion effectiveness rather than customer engagement.
+
+\subsection{Cost Per Click (CPC)}
+
+Cost Per Click (CPC) measures the average advertising cost required to generate a user click. Average CPC values were nearly identical across all four regions, ranging from \$2.24 to \$2.25.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.4\textwidth]{images/CPC_by_region.jpg}
+	\caption{CPC by Region}
+	\label{fig:CPC_by_region}
+\end{figure}
+
+Statistical testing confirmed that no significant regional differences existed in CPC (Appendix~\ref{appendix:regional_performance_analysis}). These results suggest that advertising costs were relatively consistent across geographic markets.
+
+\subsection{Regional Performance Summary}
+
+Taken together, the four performance metrics indicate that geographic location has a measurable impact on campaign profitability and conversion effectiveness, but relatively little influence on advertising engagement or acquisition cost.
+
+\begin{itemize}
+	\item The \textbf{Northeast} demonstrated the strongest overall regional performance, achieving the highest ROAS and the highest conversion rate, suggesting that campaigns in this region generate the greatest financial return.
+	
+	\item The \textbf{Midwest} consistently underperformed, recording both the lowest ROAS and the lowest conversion rate despite exhibiting click-through rates comparable to the other regions. This suggests that the primary challenge lies in converting interested users into customers rather than attracting engagement.
+	
+	\item The \textbf{South} and \textbf{West} delivered comparable performance across all four metrics, with neither region showing a statistically significant advantage over the other in most comparisons.
+	
+	\item Because CTR and CPC did not differ significantly across regions, regional performance differences appear to be driven primarily by post-click behavior rather than differences in advertising cost or user engagement.
+	
+
+\end{itemize}
+
+From a business perspective, further investigation should focus on \textbf{identifying factors that contribute to the Midwest's weaker conversion performance}. 
+
+Potential explanations include regional differences in customer preferences, purchasing behavior, market competition, or campaign targeting strategies.

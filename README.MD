@@ -27,15 +27,15 @@ Contains the Jupyter notebooks used to perform the entire analytical workflow in
 
 - `data_cleaning.ipynb`
   - Performs data loading, cleaning, and preprocessing.
+  - Performs exploratory data analysis (EDA).
   - Conducts data quality assessment, including missing value analysis, duplicate detection, consistency checks, and outlier investigation.
-  - Engineers marketing performance metrics such as CTR, CPC, CVR, and ROAS.
   - Produces the cleaned dataset used in subsequent analyses.
 
 - `statistical_tests.ipynb`
-  - Performs exploratory data analysis (EDA).
+
   - Conducts statistical assumption testing (e.g., normality and homogeneity of variance).
   - Performs hypothesis testing using non-parametric methods, including the Kruskal–Wallis test and Dunn's post-hoc analysis.
-  - Generates figures and statistical results used in the final report.
+
 
 > **Note:** All data cleaning, preprocessing, exploratory analysis, statistical testing, and figure generation were performed in Python. The notebooks contain the complete analytical workflow for the project.
 

@@ -1,0 +1,427 @@
+
+\section{Creative performance analysis}
+\label{appendix:creative_performance_analysis}
+
+\subsection{Return on Advertising Spend (ROAS)}
+\label{appendix:creative_performance_analysis_ROAS}
+
+\subsubsection{Descriptive Statistics}
+
+\begin{table}[H]
+	\centering
+	\caption{Descriptive statistics for ROAS by creative type.}
+	\begin{tabular}{lcccc}
+		\toprule
+		Creative Type & Mean & Median & Std. Dev. & Count \\
+		\midrule
+		Carousel & 0.7560 & 0.6572 & 0.4480 & 355 \\
+		Display & 0.6626 & 0.6194 & 0.2685 & 348 \\
+		Image & 0.6176 & 0.5656 & 0.2749 & 349 \\
+		Search & 1.3244 & 1.2455 & 0.6708 & 705 \\
+		Video & 0.9886 & 0.9058 & 0.4730 & 1416 \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\subsubsection{Assumption Tests}
+
+\subsubsection{Shapiro--Wilk Test}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lc}
+		\toprule
+		Creative Type & p-value \\
+		\midrule
+		Carousel & $<0.0001$ \\
+		Display & $<0.0001$ \\
+		Image & $<0.0001$ \\
+		Search & $<0.0001$ \\
+		Video & $<0.0001$ \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+All creative type distributions significantly deviated from normality ($p<0.05$).
+
+\vspace{0.3cm}
+
+\subsubsection{Levene's Test}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lc}
+		\toprule
+		Statistic & Value \\
+		\midrule
+		p-value & $<0.0001$ \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+The variability of \textbf{ROAS differed significantly} across creative types.
+
+\vspace{0.3cm}
+
+\subsubsection{Kruskal--Wallis Test}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lc}
+		\toprule
+		Statistic & Value \\
+		\midrule
+		H-statistic & 606.8404 \\
+		p-value & $<0.0001$ \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+The Kruskal--Wallis test indicates statistically significant differences in ROAS across creative types.
+
+\vspace{0.3cm}
+
+\subsubsection{Dunn Post-hoc Test}
+
+\begin{table}[H]
+	\centering
+	\caption{Pairwise Dunn test p-values (Bonferroni adjusted).}
+	\begin{tabular}{lccccc}
+		\toprule
+		& Carousel & Display & Image & Search & Video \\
+		\midrule
+		Carousel & -- & 0.2527 & 0.0008 & $<0.0001$ & $<0.0001$ \\
+		Display & 0.2527 & -- & 0.8940 & $<0.0001$ & $<0.0001$ \\
+		Image & 0.0008 & 0.8940 & -- & $<0.0001$ & $<0.0001$ \\
+		Search & $<0.0001$ & $<0.0001$ & $<0.0001$ & -- & $<0.0001$ \\
+		Video & $<0.0001$ & $<0.0001$ & $<0.0001$ & $<0.0001$ & -- \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\subsubsection{Summary}
+
+\begin{itemize}
+	\item The highest average ROAS was achieved by \textbf{Search} (1.3244).
+	\item The lowest average ROAS was observed for \textbf{Image} (0.6176).
+	\item \textbf{Search differed significantly} from all other creative types. No statistically significant differences were observed between \textbf{Carousel and Display}, or between \textbf{Display and Image}.
+\end{itemize}
+
+
+\subsection{Click-Through Rate (CTR)}\label{appendix:creative_performance_analysis_CTR}
+
+\subsubsection{Descriptive Statistics}
+
+\begin{table}[H]
+	\centering
+	\caption{Descriptive statistics for CTR by creative type.}
+	\begin{tabular}{lcccc}
+		\toprule
+		Creative Type & Mean & Median & Std. Dev. & Count \\
+		\midrule
+		Carousel & 0.0054 & 0.0051 & 0.0021 & 355 \\
+		Display & 0.0100 & 0.0098 & 0.0054 & 348 \\
+		Image & 0.0055 & 0.0052 & 0.0022 & 349 \\
+		Search & 0.0100 & 0.0099 & 0.0050 & 705 \\
+		Video & 0.0063 & 0.0061 & 0.0018 & 1416 \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\subsubsection{Assumption Tests}
+
+\subsubsection{Shapiro--Wilk Test}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lc}
+		\toprule
+		Creative Type & p-value \\
+		\midrule
+		Carousel & $<0.0001$ \\
+		Display & $<0.0001$ \\
+		Image & $<0.0001$ \\
+		Search & $<0.0001$ \\
+		Video & $<0.0001$ \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+All creative type distributions significantly deviated from normality ($p<0.05$).
+
+\vspace{0.3cm}
+
+\subsubsection{Levene's Test}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lc}
+		\toprule
+		Statistic & Value \\
+		\midrule
+		p-value & $<0.0001$ \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+The variability of \textbf{CTR differed significantly} across creative types.
+
+\vspace{0.3cm}
+
+\subsubsection{Kruskal--Wallis Test}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lc}
+		\toprule
+		Statistic & Value \\
+		\midrule
+		H-statistic & 658.6765 \\
+		p-value & $<0.0001$ \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+The Kruskal--Wallis test indicates statistically significant differences in CTR across creative types.
+
+\vspace{0.3cm}
+
+\subsubsection{Dunn Post-hoc Test}
+
+\begin{table}[H]
+	\centering
+	\caption{Pairwise Dunn test p-values (Bonferroni adjusted).}
+	\begin{tabular}{lccccc}
+		\toprule
+		& Carousel & Display & Image & Search & Video \\
+		\midrule
+		Carousel & -- & $<0.0001$ & 1.0000 & $<0.0001$ & $<0.0001$ \\
+		Display & $<0.0001$ & -- & $<0.0001$ & 1.0000 & $<0.0001$ \\
+		Image & 1.0000 & $<0.0001$ & -- & $<0.0001$ & $<0.0001$ \\
+		Search & $<0.0001$ & 1.0000 & $<0.0001$ & -- & $<0.0001$ \\
+		Video & $<0.0001$ & $<0.0001$ & $<0.0001$ & $<0.0001$ & -- \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\subsubsection{Summary}
+
+\begin{itemize}
+	\item The highest average CTR was achieved by \textbf{Display} (0.0100), closely followed by \textbf{Search} (0.0100).
+	\item The lowest average CTR was observed for \textbf{Carousel} (0.0054).
+	\item Display and Search did not differ significantly, while Carousel and Image also showed no statistically significant difference. All remaining pairwise comparisons were statistically significant.
+\end{itemize}
+
+\subsection{Conversion Rate (CVR)}\label{appendix:creative_performance_analysis_CVR}
+
+\subsubsection{Descriptive Statistics}
+
+\begin{table}[H]
+	\centering
+	\caption{Descriptive statistics for CVR by creative type.}
+	\begin{tabular}{lcccc}
+		\toprule
+		Creative Type & Mean & Median & Std. Dev. & Count \\
+		\midrule
+		Carousel & 0.0300 & 0.0289 & 0.0078 & 355 \\
+		Display & 0.0178 & 0.0169 & 0.0054 & 310 \\
+		Image & 0.0265 & 0.0252 & 0.0081 & 349 \\
+		Search & 0.0291 & 0.0284 & 0.0066 & 644 \\
+		Video & 0.0264 & 0.0266 & 0.0079 & 1416 \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\subsubsection{Assumption Tests}
+
+\subsubsection{Shapiro--Wilk Test}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lc}
+		\toprule
+		Creative Type & p-value \\
+		\midrule
+		Carousel & $<0.0001$ \\
+		Display & $<0.0001$ \\
+		Image & $<0.0001$ \\
+		Search & $<0.0001$ \\
+		Video & 0.0001 \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+All creative type distributions significantly deviated from normality ($p<0.05$).
+
+\vspace{0.3cm}
+
+\subsubsection{Levene's Test}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lc}
+		\toprule
+		Statistic & Value \\
+		\midrule
+		p-value & $<0.0001$ \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+The variability of \textbf{CVR differed significantly} across creative types.
+
+\vspace{0.3cm}
+
+\subsubsection{Kruskal--Wallis Test}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lc}
+		\toprule
+		Statistic & Value \\
+		\midrule
+		H-statistic & 489.5054 \\
+		p-value & $<0.0001$ \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+The Kruskal--Wallis test indicates statistically significant differences in CVR across creative types.
+
+\vspace{0.3cm}
+
+\subsubsection{Dunn Post-hoc Test}
+
+\begin{table}[H]
+	\centering
+	\caption{Pairwise Dunn test p-values (Bonferroni adjusted).}
+	\begin{tabular}{lccccc}
+		\toprule
+		& Carousel & Display & Image & Search & Video \\
+		\midrule
+		Carousel & -- & $<0.0001$ & $<0.0001$ & 1.0000 & $<0.0001$ \\
+		Display & $<0.0001$ & -- & $<0.0001$ & $<0.0001$ & $<0.0001$ \\
+		Image & $<0.0001$ & $<0.0001$ & -- & $<0.0001$ & 1.0000 \\
+		Search & 1.0000 & $<0.0001$ & $<0.0001$ & -- & $<0.0001$ \\
+		Video & $<0.0001$ & $<0.0001$ & 1.0000 & $<0.0001$ & -- \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+Carousel and Search did not differ significantly, while Image and Video also showed no statistically significant difference. All remaining pairwise comparisons were statistically significant.
+
+\subsubsection{Summary}
+
+\begin{itemize}
+	\item The \textbf{highest average CVR} was achieved by \textbf{Carousel} (0.0300), closely followed by \textbf{Search} (0.0291).
+	\item The \textbf{lowest average CVR} was observed for \textbf{Display} (0.0178).
+	\item Carousel and Search exhibited statistically similar CVRs, while Image and Video also did not differ significantly. All other pairwise comparisons showed statistically significant differences.
+\end{itemize}
+
+
+
+\subsection{Cost Per Click (CPC)}\label{appendix:creative_performance_analysis_CPC}
+
+\subsubsection{Descriptive Statistics}
+
+\begin{table}[H]
+	\centering
+	\caption{Descriptive statistics for CPC by creative type.}
+	\begin{tabular}{lcccc}
+		\toprule
+		Creative Type & Mean & Median & Std. Dev. & Count \\
+		\midrule
+		Carousel & 3.0715 & 2.6470 & 1.4731 & 355 \\
+		Display & 1.8540 & 1.5707 & 0.9053 & 310 \\
+		Image & 3.0082 & 2.6030 & 1.4140 & 349 \\
+		Search & 1.8847 & 1.6315 & 0.9092 & 644 \\
+		Video & 2.0942 & 1.9452 & 0.7485 & 1416 \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\subsubsection{Assumption Tests}
+
+\subsubsection{Shapiro--Wilk Test}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lc}
+		\toprule
+		Creative Type & p-value \\
+		\midrule
+		Carousel & $<0.0001$ \\
+		Display & $<0.0001$ \\
+		Image & $<0.0001$ \\
+		Search & $<0.0001$ \\
+		Video & $<0.0001$ \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+All creative type distributions significantly deviated from normality ($p<0.05$).
+
+\vspace{0.3cm}
+
+\subsubsection{Levene's Test}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lc}
+		\toprule
+		Statistic & Value \\
+		\midrule
+		p-value & $<0.0001$ \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+The variability of \textbf{CPC differed significantly} across creative types.
+
+\vspace{0.3cm}
+
+\subsubsection{Kruskal--Wallis Test}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lc}
+		\toprule
+		Statistic & Value \\
+		\midrule
+		H-statistic & 409.9110 \\
+		p-value & $<0.0001$ \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+The Kruskal--Wallis test indicates statistically significant differences in CPC across creative types.
+
+\vspace{0.3cm}
+
+\subsubsection{Dunn Post-hoc Test}
+
+\begin{table}[H]
+	\centering
+	\caption{Pairwise Dunn test p-values (Bonferroni adjusted).}
+	\begin{tabular}{lccccc}
+		\toprule
+		& Carousel & Display & Image & Search & Video \\
+		\midrule
+		Carousel & -- & $<0.0001$ & 1.0000 & $<0.0001$ & $<0.0001$ \\
+		Display & $<0.0001$ & -- & $<0.0001$ & 1.0000 & $<0.0001$ \\
+		Image & 1.0000 & $<0.0001$ & -- & $<0.0001$ & $<0.0001$ \\
+		Search & $<0.0001$ & 1.0000 & $<0.0001$ & -- & $<0.0001$ \\
+		Video & $<0.0001$ & $<0.0001$ & $<0.0001$ & $<0.0001$ & -- \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+Carousel and Image did not differ significantly, while Display and Search also exhibited statistically similar CPC values. All remaining pairwise comparisons were statistically significant.
+
+\subsubsection{Summary}
+
+\begin{itemize}
+	\item The \textbf{highest average CPC} was achieved by \textbf{Carousel} (3.0715), followed closely by \textbf{Image} (3.0082).
+	\item The \textbf{lowest average CPC} was observed for \textbf{Display} (1.8540).
+	\item Carousel and Image exhibited statistically similar CPC values, while Display and Search also did not differ significantly. All other pairwise comparisons showed statistically significant differences.
+\end{itemize}

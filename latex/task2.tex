@@ -228,3 +228,85 @@ Taken together, the four performance metrics indicate that geographic location h
 From a business perspective, further investigation should focus on \textbf{identifying factors that contribute to the Midwest's weaker conversion performance}. 
 
 Potential explanations include regional differences in customer preferences, purchasing behavior, market competition, or campaign targeting strategies.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Creative Performance Analysis}
+
+The exploratory assessment suggested that advertising performance varied across different creative types.
+
+A complete summary of the statistical analyses, including assumption checks, Kruskal--Wallis tests, and Dunn's post-hoc comparisons, is provided in Appendix~\ref{appendix:creative_performance_analysis}.
+
+\subsection{Return on Advertising Spend (ROAS)}
+
+Return on Advertising Spend (ROAS) was used to evaluate the profitability of each creative type. Search advertisements achieved the highest average ROAS (1.324), followed by Video (0.989), while Image advertisements recorded the lowest average ROAS (0.618), as shown in \textit{Fig.~\ref{fig:ROAS_by_creative}}.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.4\textwidth]{images/ROAS_by_creative.jpg}
+	\caption{ROAS by Creative Type}
+	\label{fig:ROAS_by_creative}
+\end{figure}
+
+Statistical testing confirmed that Search advertisements significantly outperformed every other creative type (Appendix~\ref{appendix:creative_performance_analysis_ROAS}). Carousel and Display creatives exhibited statistically similar ROAS values, while Display and Image creatives also showed no significant difference. These findings indicate that Search advertisements consistently generated superior financial returns compared with the remaining creative formats.
+
+\subsection{Click-Through Rate (CTR)}
+
+Click-Through Rate (CTR) was analyzed to evaluate audience engagement across creative types. Display and Search advertisements achieved the highest average CTR (approximately 1.00\%), whereas Carousel advertisements recorded the lowest average CTR (0.54\%), as illustrated in \textit{Fig.~\ref{fig:CTR_by_creative}}.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.4\textwidth]{images/CTR_by_creative.jpg}
+	\caption{CTR by Creative Type}
+	\label{fig:CTR_by_creative}
+\end{figure}
+
+Statistical testing indicated that Display and Search advertisements achieved statistically comparable click-through rates (Appendix~\ref{appendix:creative_performance_analysis_CTR}). Likewise, Carousel and Image creatives did not differ significantly from one another. All remaining pairwise comparisons were statistically significant, suggesting that Search and Display creatives consistently generated stronger audience engagement than the remaining formats.
+
+\subsection{Conversion Rate (CVR)}
+
+Conversion Rate (CVR) was used to evaluate the effectiveness of each creative type in converting user engagement into purchases. Carousel advertisements achieved the highest average conversion rate (3.00\%), closely followed by Search advertisements (2.91\%), whereas Display advertisements recorded the lowest average conversion rate (1.78\%).
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.4\textwidth]{images/CVR_by_creative.jpg}
+	\caption{CVR by Creative Type}
+	\label{fig:CVR_by_creative}
+\end{figure}
+
+Statistical testing confirmed that Carousel and Search creatives achieved statistically equivalent conversion rates (Appendix~\ref{appendix:creative_performance_analysis_CVR}). Similarly, Image and Video creatives exhibited comparable conversion performance, whereas Display advertisements converted significantly fewer clicks into purchases than every other creative type. These findings suggest that creative format has a substantial influence on post-click customer behavior.
+
+\subsection{Cost Per Click (CPC)}
+
+Cost Per Click (CPC) measures the average advertising cost required to generate a user click. Display advertisements achieved the lowest average CPC (\$1.85), followed closely by Search advertisements (\$1.88), while Carousel advertisements recorded the highest average CPC (\$3.07).
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.4\textwidth]{images/CPC_by_creative.jpg}
+	\caption{CPC by Creative Type}
+	\label{fig:CPC_by_creative}
+\end{figure}
+
+Statistical testing confirmed that Carousel and Image creatives exhibited statistically similar CPC values, while Display and Search advertisements also showed no statistically significant difference (Appendix~\ref{appendix:creative_performance_analysis_CPC}). All remaining pairwise comparisons were statistically significant, indicating meaningful differences in advertising cost among the creative formats.
+
+\subsection{Creative Performance Summary}
+
+Taken together, the four performance metrics indicate that creative type has a substantial influence on campaign profitability, audience engagement, conversion effectiveness, and advertising cost.
+
+\begin{itemize}
+	
+	\item \textbf{Search} advertisements demonstrated the strongest overall performance, achieving the highest ROAS while maintaining one of the lowest CPC values and a conversion rate comparable to the best-performing creative type. These findings suggest that Search creatives provide the most efficient balance between advertising cost and revenue generation.
+	
+	\item \textbf{Carousel} advertisements achieved the highest conversion rate but also incurred the highest CPC. This indicates that although Carousel creatives are effective at converting interested users, they require substantially greater advertising investment to generate those conversions.
+	
+	\item \textbf{Display} advertisements generated strong audience engagement through one of the highest CTR values and the lowest CPC. However, they consistently recorded the lowest conversion rate, suggesting that user interest generated by these advertisements does not effectively translate into purchases.
+	
+	\item \textbf{Image} advertisements exhibited the weakest overall financial performance, producing the lowest ROAS while incurring relatively high CPC values. This suggests that Image creatives provide comparatively poor returns on advertising investment.
+	
+	\item Because statistically significant differences were observed across all four performance metrics, creative selection appears to influence not only customer engagement but also advertising efficiency and overall campaign profitability.
+	
+\end{itemize}
+
+From a business perspective, the results suggest that \textbf{Search advertisements should be prioritized when maximizing advertising profitability}, while Carousel creatives may be appropriate for campaigns focused on maximizing conversion rates despite their higher acquisition costs. Conversely, optimization efforts for Display advertisements should focus on improving post-click conversion performance, whereas Image creatives may benefit from redesign or replacement due to their comparatively weak financial performance.

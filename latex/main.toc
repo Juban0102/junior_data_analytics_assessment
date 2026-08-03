@@ -26,114 +26,168 @@
 \contentsline {subsection}{\numberline {2.4.2}Click-Through Rate (CTR)}{17}{subsection.2.4.2}%
 \contentsline {subsection}{\numberline {2.4.3}Conversion Rate (CVR)}{18}{subsection.2.4.3}%
 \contentsline {subsection}{\numberline {2.4.4}Cost Per Click (CPC)}{19}{subsection.2.4.4}%
-\contentsline {subsection}{\numberline {2.4.5}Creative Performance Summary}{20}{subsection.2.4.5}%
-\contentsline {chapter}{Appendices}{21}{subsection.2.4.5}%
-\contentsline {chapter}{\numberline {A}Data Quality and Initial Exploratory Assessment}{21}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Data Quality Assessment}{21}{section.A.1}%
-\contentsline {subsection}{\numberline {A.1.1}Data Type}{21}{subsection.A.1.1}%
-\contentsline {subsection}{\numberline {A.1.2}Duplicate Records}{22}{subsection.A.1.2}%
-\contentsline {subsection}{\numberline {A.1.3}Data Completeness}{22}{subsection.A.1.3}%
-\contentsline {subsection}{\numberline {A.1.4}Logical Consistency Checks}{23}{subsection.A.1.4}%
-\contentsline {subsubsection}{0 Clicks with non-zero purchase}{23}{subsubsection*.3}%
-\contentsline {subsubsection}{0 Impressions with non-zero Cost-Per-Mile(CPM)}{24}{subsubsection*.4}%
-\contentsline {subsection}{\numberline {A.1.5}Outlier Assessment}{25}{subsection.A.1.5}%
-\contentsline {subsubsection}{\texttt {Spend} severe outliers investigation}{25}{subsubsection*.5}%
-\contentsline {subsection}{\numberline {A.1.6}Data Cleaning Summary}{26}{subsection.A.1.6}%
-\contentsline {chapter}{\numberline {B}Statistical Test Results}{29}{appendix.B}%
-\contentsline {section}{\numberline {B.1}Channel performance analysis }{29}{section.B.1}%
-\contentsline {subsection}{\numberline {B.1.1}Return on Advertising Spend (ROAS)}{29}{subsection.B.1.1}%
-\contentsline {subsubsection}{Descriptive Statistics}{29}{subsubsection*.6}%
-\contentsline {subsubsection}{Assumption Tests}{29}{subsubsection*.7}%
-\contentsline {subsubsection}{Shapiro--Wilk Test}{29}{subsubsection*.8}%
-\contentsline {subsubsection}{Levene's Test}{29}{subsubsection*.9}%
-\contentsline {subsubsection}{Kruskal--Wallis Test}{30}{subsubsection*.10}%
-\contentsline {subsubsection}{Dunn Post-hoc Test}{30}{subsubsection*.11}%
-\contentsline {subsubsection}{Summary}{30}{subsubsection*.12}%
-\contentsline {subsection}{\numberline {B.1.2}Click-Through Rate (CTR)}{30}{subsection.B.1.2}%
-\contentsline {subsubsection}{Descriptive Statistics}{30}{subsubsection*.13}%
-\contentsline {subsubsection}{Assumption Tests}{30}{subsubsection*.14}%
-\contentsline {subsubsection}{Shapiro--Wilk Test}{30}{subsubsection*.15}%
-\contentsline {subsubsection}{Levene's Test}{31}{subsubsection*.16}%
-\contentsline {subsubsection}{Kruskal--Wallis Test}{31}{subsubsection*.17}%
-\contentsline {subsubsection}{Dunn Post-hoc Test}{31}{subsubsection*.18}%
-\contentsline {subsubsection}{Summary}{31}{subsubsection*.19}%
-\contentsline {subsection}{\numberline {B.1.3}Conversion Rate (CVR)}{32}{subsection.B.1.3}%
-\contentsline {subsubsection}{Descriptive Statistics}{32}{subsubsection*.20}%
-\contentsline {subsubsection}{Assumption Tests}{32}{subsubsection*.21}%
-\contentsline {subsubsection}{Shapiro--Wilk Test}{32}{subsubsection*.22}%
-\contentsline {subsubsection}{Levene's Test}{32}{subsubsection*.23}%
-\contentsline {subsubsection}{Kruskal--Wallis Test}{32}{subsubsection*.24}%
-\contentsline {subsubsection}{Dunn Post-hoc Test}{33}{subsubsection*.25}%
-\contentsline {subsubsection}{Summary}{33}{subsubsection*.26}%
-\contentsline {subsection}{\numberline {B.1.4}Cost Per Click (CPC)}{33}{subsection.B.1.4}%
-\contentsline {subsubsection}{Descriptive Statistics}{33}{subsubsection*.27}%
-\contentsline {subsubsection}{Assumption Tests}{33}{subsubsection*.28}%
-\contentsline {subsubsection}{Shapiro--Wilk Test}{33}{subsubsection*.29}%
-\contentsline {subsubsection}{Levene's Test}{34}{subsubsection*.30}%
-\contentsline {subsubsection}{Kruskal--Wallis Test}{34}{subsubsection*.31}%
-\contentsline {subsubsection}{Dunn Post-hoc Test}{34}{subsubsection*.32}%
-\contentsline {subsubsection}{Summary}{34}{subsubsection*.33}%
-\contentsline {section}{\numberline {B.2}Regional performance comparison }{35}{section.B.2}%
-\contentsline {subsection}{\numberline {B.2.1}Return on Advertising Spend (ROAS)}{35}{subsection.B.2.1}%
-\contentsline {subsubsection}{Descriptive Statistics}{35}{subsubsection*.34}%
-\contentsline {subsubsection}{Assumption Tests}{35}{subsubsection*.35}%
-\contentsline {subsubsection}{Shapiro--Wilk Test}{35}{subsubsection*.36}%
-\contentsline {subsubsection}{Levene's Test}{35}{subsubsection*.37}%
-\contentsline {subsubsection}{Kruskal--Wallis Test}{35}{subsubsection*.38}%
-\contentsline {subsubsection}{Dunn Post-hoc Test}{36}{subsubsection*.39}%
-\contentsline {subsubsection}{Summary}{36}{subsubsection*.40}%
-\contentsline {subsection}{\numberline {B.2.2}Click-Through Rate (CTR)}{36}{subsection.B.2.2}%
-\contentsline {subsubsection}{Descriptive Statistics}{36}{subsubsection*.41}%
-\contentsline {subsubsection}{Assumption Tests}{36}{subsubsection*.42}%
-\contentsline {subsubsection}{Shapiro--Wilk Test}{36}{subsubsection*.43}%
-\contentsline {subsubsection}{Levene's Test}{37}{subsubsection*.44}%
-\contentsline {subsubsection}{Kruskal--Wallis Test}{37}{subsubsection*.45}%
-\contentsline {subsubsection}{Summary}{37}{subsubsection*.46}%
-\contentsline {subsection}{\numberline {B.2.3}Conversion Rate (CVR)}{37}{subsection.B.2.3}%
-\contentsline {subsubsection}{Descriptive Statistics}{37}{subsubsection*.47}%
-\contentsline {subsubsection}{Assumption Tests}{38}{subsubsection*.48}%
-\contentsline {subsubsection}{Shapiro--Wilk Test}{38}{subsubsection*.49}%
-\contentsline {subsubsection}{Levene's Test}{38}{subsubsection*.50}%
-\contentsline {subsubsection}{Kruskal--Wallis Test}{38}{subsubsection*.51}%
-\contentsline {subsubsection}{Dunn Post-hoc Test}{38}{subsubsection*.52}%
-\contentsline {subsubsection}{Summary}{39}{subsubsection*.53}%
-\contentsline {subsection}{\numberline {B.2.4}Cost Per Click (CPC)}{39}{subsection.B.2.4}%
-\contentsline {subsubsection}{Descriptive Statistics}{39}{subsubsection*.54}%
-\contentsline {subsubsection}{Assumption Tests}{39}{subsubsection*.55}%
-\contentsline {subsubsection}{Shapiro--Wilk Test}{39}{subsubsection*.56}%
-\contentsline {subsubsection}{Levene's Test}{39}{subsubsection*.57}%
-\contentsline {subsubsection}{Kruskal--Wallis Test}{40}{subsubsection*.58}%
-\contentsline {subsubsection}{Summary}{40}{subsubsection*.59}%
-\contentsline {section}{\numberline {B.3}Creative performance analysis}{40}{section.B.3}%
-\contentsline {subsection}{\numberline {B.3.1}Return on Advertising Spend (ROAS)}{40}{subsection.B.3.1}%
-\contentsline {subsubsection}{Descriptive Statistics}{40}{subsubsection*.60}%
-\contentsline {subsubsection}{Assumption Tests}{40}{subsubsection*.61}%
-\contentsline {subsubsection}{Shapiro--Wilk Test}{40}{subsubsection*.62}%
-\contentsline {subsubsection}{Levene's Test}{41}{subsubsection*.63}%
-\contentsline {subsubsection}{Kruskal--Wallis Test}{41}{subsubsection*.64}%
-\contentsline {subsubsection}{Dunn Post-hoc Test}{41}{subsubsection*.65}%
-\contentsline {subsubsection}{Summary}{41}{subsubsection*.66}%
-\contentsline {subsection}{\numberline {B.3.2}Click-Through Rate (CTR)}{42}{subsection.B.3.2}%
-\contentsline {subsubsection}{Descriptive Statistics}{42}{subsubsection*.67}%
-\contentsline {subsubsection}{Assumption Tests}{42}{subsubsection*.68}%
-\contentsline {subsubsection}{Shapiro--Wilk Test}{42}{subsubsection*.69}%
-\contentsline {subsubsection}{Levene's Test}{42}{subsubsection*.70}%
-\contentsline {subsubsection}{Kruskal--Wallis Test}{42}{subsubsection*.71}%
-\contentsline {subsubsection}{Dunn Post-hoc Test}{43}{subsubsection*.72}%
-\contentsline {subsubsection}{Summary}{43}{subsubsection*.73}%
-\contentsline {subsection}{\numberline {B.3.3}Conversion Rate (CVR)}{43}{subsection.B.3.3}%
-\contentsline {subsubsection}{Descriptive Statistics}{43}{subsubsection*.74}%
-\contentsline {subsubsection}{Assumption Tests}{43}{subsubsection*.75}%
-\contentsline {subsubsection}{Shapiro--Wilk Test}{43}{subsubsection*.76}%
-\contentsline {subsubsection}{Levene's Test}{44}{subsubsection*.77}%
-\contentsline {subsubsection}{Kruskal--Wallis Test}{44}{subsubsection*.78}%
-\contentsline {subsubsection}{Dunn Post-hoc Test}{44}{subsubsection*.79}%
-\contentsline {subsubsection}{Summary}{44}{subsubsection*.80}%
-\contentsline {subsection}{\numberline {B.3.4}Cost Per Click (CPC)}{45}{subsection.B.3.4}%
-\contentsline {subsubsection}{Descriptive Statistics}{45}{subsubsection*.81}%
-\contentsline {subsubsection}{Assumption Tests}{45}{subsubsection*.82}%
-\contentsline {subsubsection}{Shapiro--Wilk Test}{45}{subsubsection*.83}%
-\contentsline {subsubsection}{Levene's Test}{45}{subsubsection*.84}%
-\contentsline {subsubsection}{Kruskal--Wallis Test}{45}{subsubsection*.85}%
-\contentsline {subsubsection}{Dunn Post-hoc Test}{46}{subsubsection*.86}%
-\contentsline {subsubsection}{Summary}{46}{subsubsection*.87}%
+\contentsline {subsection}{\numberline {2.4.5}Creative Performance Summary}{19}{subsection.2.4.5}%
+\contentsline {section}{\numberline {2.5}Audience--Product Performance Analysis}{20}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Return on Advertising Spend (ROAS)}{20}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Click-Through Rate (CTR)}{20}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}Conversion Rate (CVR)}{21}{subsection.2.5.3}%
+\contentsline {subsection}{\numberline {2.5.4}Cost Per Click (CPC)}{22}{subsection.2.5.4}%
+\contentsline {subsection}{\numberline {2.5.5}Audience--Product Performance Summary}{22}{subsection.2.5.5}%
+\contentsline {section}{\numberline {2.6}Effect of Competitive Events}{23}{section.2.6}%
+\contentsline {chapter}{Appendices}{25}{figure.2.17}%
+\contentsline {chapter}{\numberline {A}Data Quality and Initial Exploratory Assessment}{25}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Data Quality Assessment}{25}{section.A.1}%
+\contentsline {subsection}{\numberline {A.1.1}Data Type}{25}{subsection.A.1.1}%
+\contentsline {subsection}{\numberline {A.1.2}Duplicate Records}{26}{subsection.A.1.2}%
+\contentsline {subsection}{\numberline {A.1.3}Data Completeness}{26}{subsection.A.1.3}%
+\contentsline {subsection}{\numberline {A.1.4}Logical Consistency Checks}{27}{subsection.A.1.4}%
+\contentsline {subsubsection}{0 Clicks with non-zero purchase}{27}{subsubsection*.3}%
+\contentsline {subsubsection}{0 Impressions with non-zero Cost-Per-Mile(CPM)}{28}{subsubsection*.4}%
+\contentsline {subsection}{\numberline {A.1.5}Outlier Assessment}{29}{subsection.A.1.5}%
+\contentsline {subsubsection}{\texttt {Spend} severe outliers investigation}{29}{subsubsection*.5}%
+\contentsline {subsection}{\numberline {A.1.6}Data Cleaning Summary}{30}{subsection.A.1.6}%
+\contentsline {chapter}{\numberline {B}Statistical Test Results}{33}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Channel performance analysis }{33}{section.B.1}%
+\contentsline {subsection}{\numberline {B.1.1}Return on Advertising Spend (ROAS)}{33}{subsection.B.1.1}%
+\contentsline {subsubsection}{Descriptive Statistics}{33}{subsubsection*.6}%
+\contentsline {subsubsection}{Assumption Tests}{33}{subsubsection*.7}%
+\contentsline {subsubsection}{Shapiro--Wilk Test}{33}{subsubsection*.8}%
+\contentsline {subsubsection}{Levene's Test}{33}{subsubsection*.9}%
+\contentsline {subsubsection}{Kruskal--Wallis Test}{34}{subsubsection*.10}%
+\contentsline {subsubsection}{Dunn Post-hoc Test}{34}{subsubsection*.11}%
+\contentsline {subsubsection}{Summary}{34}{subsubsection*.12}%
+\contentsline {subsection}{\numberline {B.1.2}Click-Through Rate (CTR)}{34}{subsection.B.1.2}%
+\contentsline {subsubsection}{Descriptive Statistics}{34}{subsubsection*.13}%
+\contentsline {subsubsection}{Assumption Tests}{34}{subsubsection*.14}%
+\contentsline {subsubsection}{Shapiro--Wilk Test}{34}{subsubsection*.15}%
+\contentsline {subsubsection}{Levene's Test}{35}{subsubsection*.16}%
+\contentsline {subsubsection}{Kruskal--Wallis Test}{35}{subsubsection*.17}%
+\contentsline {subsubsection}{Dunn Post-hoc Test}{35}{subsubsection*.18}%
+\contentsline {subsubsection}{Summary}{35}{subsubsection*.19}%
+\contentsline {subsection}{\numberline {B.1.3}Conversion Rate (CVR)}{36}{subsection.B.1.3}%
+\contentsline {subsubsection}{Descriptive Statistics}{36}{subsubsection*.20}%
+\contentsline {subsubsection}{Assumption Tests}{36}{subsubsection*.21}%
+\contentsline {subsubsection}{Shapiro--Wilk Test}{36}{subsubsection*.22}%
+\contentsline {subsubsection}{Levene's Test}{36}{subsubsection*.23}%
+\contentsline {subsubsection}{Kruskal--Wallis Test}{36}{subsubsection*.24}%
+\contentsline {subsubsection}{Dunn Post-hoc Test}{37}{subsubsection*.25}%
+\contentsline {subsubsection}{Summary}{37}{subsubsection*.26}%
+\contentsline {subsection}{\numberline {B.1.4}Cost Per Click (CPC)}{37}{subsection.B.1.4}%
+\contentsline {subsubsection}{Descriptive Statistics}{37}{subsubsection*.27}%
+\contentsline {subsubsection}{Assumption Tests}{37}{subsubsection*.28}%
+\contentsline {subsubsection}{Shapiro--Wilk Test}{37}{subsubsection*.29}%
+\contentsline {subsubsection}{Levene's Test}{38}{subsubsection*.30}%
+\contentsline {subsubsection}{Kruskal--Wallis Test}{38}{subsubsection*.31}%
+\contentsline {subsubsection}{Dunn Post-hoc Test}{38}{subsubsection*.32}%
+\contentsline {subsubsection}{Summary}{38}{subsubsection*.33}%
+\contentsline {section}{\numberline {B.2}Regional performance comparison }{39}{section.B.2}%
+\contentsline {subsection}{\numberline {B.2.1}Return on Advertising Spend (ROAS)}{39}{subsection.B.2.1}%
+\contentsline {subsubsection}{Descriptive Statistics}{39}{subsubsection*.34}%
+\contentsline {subsubsection}{Assumption Tests}{39}{subsubsection*.35}%
+\contentsline {subsubsection}{Shapiro--Wilk Test}{39}{subsubsection*.36}%
+\contentsline {subsubsection}{Levene's Test}{39}{subsubsection*.37}%
+\contentsline {subsubsection}{Kruskal--Wallis Test}{39}{subsubsection*.38}%
+\contentsline {subsubsection}{Dunn Post-hoc Test}{40}{subsubsection*.39}%
+\contentsline {subsubsection}{Summary}{40}{subsubsection*.40}%
+\contentsline {subsection}{\numberline {B.2.2}Click-Through Rate (CTR)}{40}{subsection.B.2.2}%
+\contentsline {subsubsection}{Descriptive Statistics}{40}{subsubsection*.41}%
+\contentsline {subsubsection}{Assumption Tests}{40}{subsubsection*.42}%
+\contentsline {subsubsection}{Shapiro--Wilk Test}{40}{subsubsection*.43}%
+\contentsline {subsubsection}{Levene's Test}{41}{subsubsection*.44}%
+\contentsline {subsubsection}{Kruskal--Wallis Test}{41}{subsubsection*.45}%
+\contentsline {subsubsection}{Summary}{41}{subsubsection*.46}%
+\contentsline {subsection}{\numberline {B.2.3}Conversion Rate (CVR)}{41}{subsection.B.2.3}%
+\contentsline {subsubsection}{Descriptive Statistics}{41}{subsubsection*.47}%
+\contentsline {subsubsection}{Assumption Tests}{42}{subsubsection*.48}%
+\contentsline {subsubsection}{Shapiro--Wilk Test}{42}{subsubsection*.49}%
+\contentsline {subsubsection}{Levene's Test}{42}{subsubsection*.50}%
+\contentsline {subsubsection}{Kruskal--Wallis Test}{42}{subsubsection*.51}%
+\contentsline {subsubsection}{Dunn Post-hoc Test}{42}{subsubsection*.52}%
+\contentsline {subsubsection}{Summary}{43}{subsubsection*.53}%
+\contentsline {subsection}{\numberline {B.2.4}Cost Per Click (CPC)}{43}{subsection.B.2.4}%
+\contentsline {subsubsection}{Descriptive Statistics}{43}{subsubsection*.54}%
+\contentsline {subsubsection}{Assumption Tests}{43}{subsubsection*.55}%
+\contentsline {subsubsection}{Shapiro--Wilk Test}{43}{subsubsection*.56}%
+\contentsline {subsubsection}{Levene's Test}{43}{subsubsection*.57}%
+\contentsline {subsubsection}{Kruskal--Wallis Test}{44}{subsubsection*.58}%
+\contentsline {subsubsection}{Summary}{44}{subsubsection*.59}%
+\contentsline {section}{\numberline {B.3}Creative performance analysis}{44}{section.B.3}%
+\contentsline {subsection}{\numberline {B.3.1}Return on Advertising Spend (ROAS)}{44}{subsection.B.3.1}%
+\contentsline {subsubsection}{Descriptive Statistics}{44}{subsubsection*.60}%
+\contentsline {subsubsection}{Assumption Tests}{44}{subsubsection*.61}%
+\contentsline {subsubsection}{Shapiro--Wilk Test}{44}{subsubsection*.62}%
+\contentsline {subsubsection}{Levene's Test}{45}{subsubsection*.63}%
+\contentsline {subsubsection}{Kruskal--Wallis Test}{45}{subsubsection*.64}%
+\contentsline {subsubsection}{Dunn Post-hoc Test}{45}{subsubsection*.65}%
+\contentsline {subsubsection}{Summary}{45}{subsubsection*.66}%
+\contentsline {subsection}{\numberline {B.3.2}Click-Through Rate (CTR)}{46}{subsection.B.3.2}%
+\contentsline {subsubsection}{Descriptive Statistics}{46}{subsubsection*.67}%
+\contentsline {subsubsection}{Assumption Tests}{46}{subsubsection*.68}%
+\contentsline {subsubsection}{Shapiro--Wilk Test}{46}{subsubsection*.69}%
+\contentsline {subsubsection}{Levene's Test}{46}{subsubsection*.70}%
+\contentsline {subsubsection}{Kruskal--Wallis Test}{46}{subsubsection*.71}%
+\contentsline {subsubsection}{Dunn Post-hoc Test}{47}{subsubsection*.72}%
+\contentsline {subsubsection}{Summary}{47}{subsubsection*.73}%
+\contentsline {subsection}{\numberline {B.3.3}Conversion Rate (CVR)}{47}{subsection.B.3.3}%
+\contentsline {subsubsection}{Descriptive Statistics}{47}{subsubsection*.74}%
+\contentsline {subsubsection}{Assumption Tests}{47}{subsubsection*.75}%
+\contentsline {subsubsection}{Shapiro--Wilk Test}{47}{subsubsection*.76}%
+\contentsline {subsubsection}{Levene's Test}{48}{subsubsection*.77}%
+\contentsline {subsubsection}{Kruskal--Wallis Test}{48}{subsubsection*.78}%
+\contentsline {subsubsection}{Dunn Post-hoc Test}{48}{subsubsection*.79}%
+\contentsline {subsubsection}{Summary}{48}{subsubsection*.80}%
+\contentsline {subsection}{\numberline {B.3.4}Cost Per Click (CPC)}{49}{subsection.B.3.4}%
+\contentsline {subsubsection}{Descriptive Statistics}{49}{subsubsection*.81}%
+\contentsline {subsubsection}{Assumption Tests}{49}{subsubsection*.82}%
+\contentsline {subsubsection}{Shapiro--Wilk Test}{49}{subsubsection*.83}%
+\contentsline {subsubsection}{Levene's Test}{49}{subsubsection*.84}%
+\contentsline {subsubsection}{Kruskal--Wallis Test}{49}{subsubsection*.85}%
+\contentsline {subsubsection}{Dunn Post-hoc Test}{50}{subsubsection*.86}%
+\contentsline {subsubsection}{Summary}{50}{subsubsection*.87}%
+\contentsline {section}{\numberline {B.4}Audience--Product Performance Analysis}{50}{section.B.4}%
+\contentsline {subsection}{\numberline {B.4.1}Return on Advertising Spend (ROAS)}{50}{subsection.B.4.1}%
+\contentsline {subsubsection}{Descriptive Statistics}{50}{subsubsection*.88}%
+\contentsline {subsubsection}{Assumption Tests}{51}{subsubsection*.89}%
+\contentsline {subsubsection}{Shapiro--Wilk Test}{51}{subsubsection*.90}%
+\contentsline {subsubsection}{Levene's Test}{51}{subsubsection*.91}%
+\contentsline {subsubsection}{Kruskal--Wallis Test}{51}{subsubsection*.92}%
+\contentsline {subsubsection}{Dunn Post-hoc Test}{51}{subsubsection*.93}%
+\contentsline {subsubsection}{Summary}{52}{subsubsection*.94}%
+\contentsline {subsection}{\numberline {B.4.2}Click-Through Rate (CTR)}{52}{subsection.B.4.2}%
+\contentsline {subsubsection}{Descriptive Statistics}{52}{subsubsection*.95}%
+\contentsline {subsubsection}{Assumption Tests}{52}{subsubsection*.96}%
+\contentsline {subsubsection}{Shapiro--Wilk Test}{52}{subsubsection*.97}%
+\contentsline {subsubsection}{Levene's Test}{52}{subsubsection*.98}%
+\contentsline {subsubsection}{Kruskal--Wallis Test}{53}{subsubsection*.99}%
+\contentsline {subsubsection}{Dunn Post-hoc Test}{53}{subsubsection*.100}%
+\contentsline {subsubsection}{Summary}{53}{subsubsection*.101}%
+\contentsline {subsection}{\numberline {B.4.3}Conversion Rate (CVR)}{54}{subsection.B.4.3}%
+\contentsline {subsubsection}{Descriptive Statistics}{54}{subsubsection*.102}%
+\contentsline {subsubsection}{Assumption Tests}{54}{subsubsection*.103}%
+\contentsline {subsubsection}{Shapiro--Wilk Test}{54}{subsubsection*.104}%
+\contentsline {subsubsection}{Levene's Test}{54}{subsubsection*.105}%
+\contentsline {subsubsection}{Kruskal--Wallis Test}{54}{subsubsection*.106}%
+\contentsline {subsubsection}{Dunn Post-hoc Test}{55}{subsubsection*.107}%
+\contentsline {subsubsection}{Summary}{55}{subsubsection*.108}%
+\contentsline {subsection}{\numberline {B.4.4}Cost Per Click (CPC)}{55}{subsection.B.4.4}%
+\contentsline {subsubsection}{Descriptive Statistics}{55}{subsubsection*.109}%
+\contentsline {subsubsection}{Assumption Tests}{55}{subsubsection*.110}%
+\contentsline {subsubsection}{Shapiro--Wilk Test}{55}{subsubsection*.111}%
+\contentsline {subsubsection}{Levene's Test}{56}{subsubsection*.112}%
+\contentsline {subsubsection}{Kruskal--Wallis Test}{56}{subsubsection*.113}%
+\contentsline {subsubsection}{Dunn Post-hoc Test}{56}{subsubsection*.114}%
+\contentsline {subsubsection}{Summary}{56}{subsubsection*.115}%
+\contentsline {section}{\numberline {B.5}Statistical Test Results of Competitive Event Analysis}{57}{section.B.5}%
+\contentsline {subsection}{\numberline {B.5.1}Return on Advertising Spend (ROAS)}{57}{subsection.B.5.1}%
+\contentsline {subsubsection}{Descriptive Statistics}{57}{subsubsection*.116}%
+\contentsline {subsubsection}{Statistical Tests}{57}{subsubsection*.117}%
+\contentsline {subsection}{\numberline {B.5.2}Click-Through Rate (CTR)}{57}{subsection.B.5.2}%
+\contentsline {subsubsection}{Descriptive Statistics}{57}{subsubsection*.118}%
+\contentsline {subsubsection}{Statistical Tests}{57}{subsubsection*.119}%
+\contentsline {subsection}{\numberline {B.5.3}Conversion Rate (CVR)}{58}{subsection.B.5.3}%
+\contentsline {subsubsection}{Descriptive Statistics}{58}{subsubsection*.120}%
+\contentsline {subsubsection}{Statistical Tests}{58}{subsubsection*.121}%
+\contentsline {subsection}{\numberline {B.5.4}Cost Per Click (CPC)}{58}{subsection.B.5.4}%
+\contentsline {subsubsection}{Descriptive Statistics}{58}{subsubsection*.122}%
+\contentsline {subsubsection}{Statistical Tests}{58}{subsubsection*.123}%
+\contentsline {subsection}{\numberline {B.5.5}Summary}{59}{subsection.B.5.5}%

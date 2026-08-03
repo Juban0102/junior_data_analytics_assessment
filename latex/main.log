@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.11.17)  30 JUL 2026 07:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.11.17)  2 AUG 2026 10:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -768,7 +768,7 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 (hyperref)                than one, level fixed on input line 7.
 
 [7] [8]
-<images/roas_summary.jpg, id=291, 999.735pt x 578.16pt>
+<images/roas_summary.jpg, id=412, 999.735pt x 578.16pt>
 File: images/roas_summary.jpg Graphic file (type jpg)
 <use images/roas_summary.jpg>
 Package pdftex.def Info: images/roas_summary.jpg  used on input line 111.
@@ -778,46 +778,46 @@ Task 2.
 [11
 
 ]
-<images/ROAS_by_platform.jpg, id=312, 666.23906pt x 521.69907pt>
+<images/ROAS_by_platform.jpg, id=433, 666.23906pt x 521.69907pt>
 File: images/ROAS_by_platform.jpg Graphic file (type jpg)
 <use images/ROAS_by_platform.jpg>
 Package pdftex.def Info: images/ROAS_by_platform.jpg  used on input line 69.
 (pdftex.def)             Requested size: 140.92793pt x 110.34811pt.
  [12 <./images/ROAS_by_platform.jpg>]
-<images/CTR_by_platform.jpg, id=320, 647.41875pt x 547.2947pt>
+<images/CTR_by_platform.jpg, id=441, 647.41875pt x 547.2947pt>
 File: images/CTR_by_platform.jpg Graphic file (type jpg)
 <use images/CTR_by_platform.jpg>
 Package pdftex.def Info: images/CTR_by_platform.jpg  used on input line 83.
 (pdftex.def)             Requested size: 140.92793pt x 119.12749pt.
-<images/CVR_by_platform.jpg, id=322, 648.17157pt x 525.46312pt>
+<images/CVR_by_platform.jpg, id=443, 648.17157pt x 525.46312pt>
 File: images/CVR_by_platform.jpg Graphic file (type jpg)
 <use images/CVR_by_platform.jpg>
 Package pdftex.def Info: images/CVR_by_platform.jpg  used on input line 101.
 (pdftex.def)             Requested size: 140.92793pt x 114.24721pt.
  [13 <./images/CTR_by_platform.jpg> <./images/CVR_by_platform.jpg>]
-<images/CPC_by_platform.jpg, id=331, 660.21657pt x 531.48563pt>
+<images/CPC_by_platform.jpg, id=452, 660.21657pt x 531.48563pt>
 File: images/CPC_by_platform.jpg Graphic file (type jpg)
 <use images/CPC_by_platform.jpg>
 Package pdftex.def Info: images/CPC_by_platform.jpg  used on input line 118.
 (pdftex.def)             Requested size: 140.92793pt x 113.44809pt.
  [14 <./images/CPC_by_platform.jpg>]
-<images/ROAS_by_region.jpg, id=340, 755.82375pt x 576.65437pt>
+<images/ROAS_by_region.jpg, id=461, 755.82375pt x 576.65437pt>
 File: images/ROAS_by_region.jpg Graphic file (type jpg)
 <use images/ROAS_by_region.jpg>
 Package pdftex.def Info: images/ROAS_by_region.jpg  used on input line 162.
 (pdftex.def)             Requested size: 187.89914pt x 143.35371pt.
-<images/CTR_by_region.jpg, id=342, 714.41907pt x 576.65437pt>
+<images/CTR_by_region.jpg, id=463, 714.41907pt x 576.65437pt>
 File: images/CTR_by_region.jpg Graphic file (type jpg)
 <use images/CTR_by_region.jpg>
 Package pdftex.def Info: images/CTR_by_region.jpg  used on input line 177.
 (pdftex.def)             Requested size: 187.89914pt x 151.66pt.
  [15 <./images/ROAS_by_region.jpg> <./images/CTR_by_region.jpg>]
-<images/CVR_by_region.jpg, id=351, 694.84593pt x 576.65437pt>
+<images/CVR_by_region.jpg, id=472, 694.84593pt x 576.65437pt>
 File: images/CVR_by_region.jpg Graphic file (type jpg)
 <use images/CVR_by_region.jpg>
 Package pdftex.def Info: images/CVR_by_region.jpg  used on input line 190.
 (pdftex.def)             Requested size: 187.89914pt x 155.93633pt.
-<images/CPC_by_region.jpg, id=353, 714.41907pt x 569.87906pt>
+<images/CPC_by_region.jpg, id=474, 714.41907pt x 569.87906pt>
 File: images/CPC_by_region.jpg Graphic file (type jpg)
 <use images/CPC_by_region.jpg>
 Package pdftex.def Info: images/CPC_by_region.jpg  used on input line 205.
@@ -829,112 +829,133 @@ gional dif-fer-ences ex-isted in CPC (Ap-pendix []B.2.4[]).
  []
 
 [16 <./images/CVR_by_region.jpg> <./images/CPC_by_region.jpg>]
-
-LaTeX Warning: Reference `fig:ROAS_by_creative' on page 17 undefined on input l
-ine 244.
-
-
-LaTeX Warning: File `images/ROAS_by_creative.jpg' not found on input line 248.
-
-
-! Package pdftex.def Error: File `images/ROAS_by_creative.jpg' not found: using
- draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.248 ...4\textwidth]{images/ROAS_by_creative.jpg}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+<images/ROAS_by_creative.jpg, id=485, 674.52pt x 524.71031pt>
+File: images/ROAS_by_creative.jpg Graphic file (type jpg)
+<use images/ROAS_by_creative.jpg>
+Package pdftex.def Info: images/ROAS_by_creative.jpg  used on input line 248.
+(pdftex.def)             Requested size: 187.89914pt x 146.16527pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: Reference `fig:CTR_by_creative' on page 17 undefined on input li
-ne 257.
+Overfull \hbox (7.47534pt too wide) in paragraph at lines 257--258
+\OT1/cmr/m/n/10.95 whereas Carousel ad-ver-tise-ments recorded the low-est av-e
+r-age CTR (0.54%), as il-lus-trated in \OT1/cmr/m/it/10.95 Fig. []2.10[]\OT1/cm
+r/m/n/10.95 . 
+ []
 
-
-LaTeX Warning: File `images/CTR_by_creative.jpg' not found on input line 261.
-
-
-! Package pdftex.def Error: File `images/CTR_by_creative.jpg' not found: using 
-draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.261 ....4\textwidth]{images/CTR_by_creative.jpg}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+<images/CTR_by_creative.jpg, id=488, 679.03688pt x 522.45187pt>
+File: images/CTR_by_creative.jpg Graphic file (type jpg)
+<use images/CTR_by_creative.jpg>
+Package pdftex.def Info: images/CTR_by_creative.jpg  used on input line 261.
+(pdftex.def)             Requested size: 187.89914pt x 144.56358pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [17]
-
-LaTeX Warning: File `images/CVR_by_creative.jpg' not found on input line 274.
-
-
-! Package pdftex.def Error: File `images/CVR_by_creative.jpg' not found: using 
-draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.274 ....4\textwidth]{images/CVR_by_creative.jpg}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+<images/CVR_by_creative.jpg, id=496, 692.5875pt x 524.71031pt>
+File: images/CVR_by_creative.jpg Graphic file (type jpg)
+<use images/CVR_by_creative.jpg>
+Package pdftex.def Info: images/CVR_by_creative.jpg  used on input line 274.
+(pdftex.def)             Requested size: 187.89914pt x 142.35422pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[18]
 
-LaTeX Warning: File `images/CPC_by_creative.jpg' not found on input line 287.
+Underfull \vbox (badness 6944) has occurred while \output is active []
+
+ [18 <./images/ROAS_by_creative.jpg> <./images/CTR_by_creative.jpg>]
+<images/CPC_by_creative.jpg, id=502, 679.03688pt x 527.72156pt>
+File: images/CPC_by_creative.jpg Graphic file (type jpg)
+<use images/CPC_by_creative.jpg>
+Package pdftex.def Info: images/CPC_by_creative.jpg  used on input line 287.
+(pdftex.def)             Requested size: 187.89914pt x 146.02171pt.
+ [19 <./images/CVR_by_creative.jpg> <./images/CPC_by_creative.jpg>]
+<images/ROAS_by_audience-product.jpg, id=513, 1105.12875pt x 517.18219pt>
+File: images/ROAS_by_audience-product.jpg Graphic file (type jpg)
+<use images/ROAS_by_audience-product.jpg>
+Package pdftex.def Info: images/ROAS_by_audience-product.jpg  used on input lin
+e 329.
+(pdftex.def)             Requested size: 281.85587pt x 131.89943pt.
 
 
-! Package pdftex.def Error: File `images/CPC_by_creative.jpg' not found: using 
-draft setting.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.287 ....4\textwidth]{images/CPC_by_creative.jpg}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+<images/CTR_by_audience-product.jpg, id=515, 1083.29718pt x 542.025pt>
+File: images/CTR_by_audience-product.jpg Graphic file (type jpg)
+<use images/CTR_by_audience-product.jpg>
+Package pdftex.def Info: images/CTR_by_audience-product.jpg  used on input line
+ 342.
+(pdftex.def)             Requested size: 281.85587pt x 141.02242pt.
 
-[19]) [20] (task1_appendix.tex
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (21.13007pt too wide) in paragraph at lines 347--348
+\OT1/cmr/m/n/10.95 tis-ti-cally sim-i-lar click-through rates (Ap-pendix []B.4.
+2[]). Like-wise, Athletes--Preworkout and FitnessEnth--
+ []
+
+[20]
+<images/CVR_by_audience-product.jpg, id=522, 1159.33125pt x 521.69907pt>
+File: images/CVR_by_audience-product.jpg Graphic file (type jpg)
+<use images/CVR_by_audience-product.jpg>
+Package pdftex.def Info: images/CVR_by_audience-product.jpg  used on input line
+ 355.
+(pdftex.def)             Requested size: 281.85587pt x 126.83426pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 3039) has occurred while \output is active []
+
+ [21 <./images/ROAS_by_audience-product.jpg> <./images/CTR_by_audience-product.
+jpg>]
+<images/CPC_by_audience-product.jpg, id=529, 1095.3422pt x 550.30594pt>
+File: images/CPC_by_audience-product.jpg Graphic file (type jpg)
+<use images/CPC_by_audience-product.jpg>
+Package pdftex.def Info: images/CPC_by_audience-product.jpg  used on input line
+ 368.
+(pdftex.def)             Requested size: 281.85587pt x 141.60669pt.
+
+[22 <./images/CVR_by_audience-product.jpg> <./images/CPC_by_audience-product.jp
+g>]
+<images/competitive_event_effect.jpg, id=538, 773.13844pt x 575.90157pt>
+File: images/competitive_event_effect.jpg Graphic file (type jpg)
+<use images/competitive_event_effect.jpg>
+Package pdftex.def Info: images/competitive_event_effect.jpg  used on input lin
+e 412.
+(pdftex.def)             Requested size: 469.75502pt x 349.9198pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[23]) [24 <./images/competitive_event_effect.jpg>] (task1_appendix.tex
 Appendix A.
-<images/check_datatype.jpg, id=395, 448.67625pt x 374.14781pt>
+<images/check_datatype.jpg, id=553, 448.67625pt x 374.14781pt>
 File: images/check_datatype.jpg Graphic file (type jpg)
 <use images/check_datatype.jpg>
 Package pdftex.def Info: images/check_datatype.jpg  used on input line 19.
 (pdftex.def)             Requested size: 211.38832pt x 176.27196pt.
-[21
+[25
 
 
  <./images/check_datatype.jpg>]
-<images/duplicate_records.jpg, id=401, 688.07062pt x 126.4725pt>
+<images/duplicate_records.jpg, id=560, 688.07062pt x 126.4725pt>
 File: images/duplicate_records.jpg Graphic file (type jpg)
 <use images/duplicate_records.jpg>
 Package pdftex.def Info: images/duplicate_records.jpg  used on input line 31.
 (pdftex.def)             Requested size: 375.80544pt x 69.0757pt.
-<images/revenue_missing_values.jpg, id=404, 1394.96156pt x 402.75468pt>
+<images/revenue_missing_values.jpg, id=563, 1394.96156pt x 402.75468pt>
 File: images/revenue_missing_values.jpg Graphic file (type jpg)
 <use images/revenue_missing_values.jpg>
 Package pdftex.def Info: images/revenue_missing_values.jpg  used on input line 
 52.
 (pdftex.def)             Requested size: 469.75502pt x 135.62578pt.
-<images/drop_missing_revenue.jpg, id=406, 1385.92781pt x 201.75375pt>
+<images/drop_missing_revenue.jpg, id=565, 1385.92781pt x 201.75375pt>
 File: images/drop_missing_revenue.jpg Graphic file (type jpg)
 <use images/drop_missing_revenue.jpg>
 Package pdftex.def Info: images/drop_missing_revenue.jpg  used on input line 63
@@ -944,7 +965,7 @@ Package pdftex.def Info: images/drop_missing_revenue.jpg  used on input line 63
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/video_completion_missing.jpg, id=407, 488.57532pt x 370.38374pt>
+<images/video_completion_missing.jpg, id=566, 488.57532pt x 370.38374pt>
 File: images/video_completion_missing.jpg Graphic file (type jpg)
 <use images/video_completion_missing.jpg>
 Package pdftex.def Info: images/video_completion_missing.jpg  used on input lin
@@ -953,7 +974,7 @@ e 75.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/filtered_video_completion_missing.jpg, id=409, 560.0925pt x 398.23781pt
+<images/filtered_video_completion_missing.jpg, id=568, 560.0925pt x 398.23781pt
 >
 File: images/filtered_video_completion_missing.jpg Graphic file (type jpg)
 <use images/filtered_video_completion_missing.jpg>
@@ -963,8 +984,8 @@ input line 87.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[22 <./images/duplicate_records.jpg> <./images/revenue_missing_values.jpg>]
-<images/0clicks_non0purchase.jpg, id=418, 1395.71437pt x 362.85562pt>
+[26 <./images/duplicate_records.jpg> <./images/revenue_missing_values.jpg>]
+<images/0clicks_non0purchase.jpg, id=577, 1395.71437pt x 362.85562pt>
 File: images/0clicks_non0purchase.jpg Graphic file (type jpg)
 <use images/0clicks_non0purchase.jpg>
 Package pdftex.def Info: images/0clicks_non0purchase.jpg  used on input line 10
@@ -977,9 +998,9 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 Underfull \vbox (badness 1168) has occurred while \output is active []
 
- [23 <./images/drop_missing_revenue.jpg> <./images/video_completion_missing.jpg
+ [27 <./images/drop_missing_revenue.jpg> <./images/video_completion_missing.jpg
 >]
-<images/0impressions.jpg, id=426, 1395.71437pt x 385.44pt>
+<images/0impressions.jpg, id=585, 1395.71437pt x 385.44pt>
 File: images/0impressions.jpg Graphic file (type jpg)
 <use images/0impressions.jpg>
 Package pdftex.def Info: images/0impressions.jpg  used on input line 140.
@@ -988,7 +1009,7 @@ Package pdftex.def Info: images/0impressions.jpg  used on input line 140.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/0impressionscount.jpg, id=427, 581.92406pt x 211.54031pt>
+<images/0impressionscount.jpg, id=586, 581.92406pt x 211.54031pt>
 File: images/0impressionscount.jpg Graphic file (type jpg)
 <use images/0impressionscount.jpg>
 Package pdftex.def Info: images/0impressionscount.jpg  used on input line 150.
@@ -996,7 +1017,7 @@ Package pdftex.def Info: images/0impressionscount.jpg  used on input line 150.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/box_plotsjpg.jpg, id=429, 1242.14063pt x 639.13782pt>
+<images/box_plotsjpg.jpg, id=588, 1242.14063pt x 639.13782pt>
 File: images/box_plotsjpg.jpg Graphic file (type jpg)
 <use images/box_plotsjpg.jpg>
 Package pdftex.def Info: images/box_plotsjpg.jpg  used on input line 159.
@@ -1004,14 +1025,14 @@ Package pdftex.def Info: images/box_plotsjpg.jpg  used on input line 159.
 
 Underfull \vbox (badness 1303) has occurred while \output is active []
 
- [24 <./images/filtered_video_completion_missing.jpg> <./images/0clicks_non0pur
+ [28 <./images/filtered_video_completion_missing.jpg> <./images/0clicks_non0pur
 chase.jpg>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 165.
-<images/CPM_mismatch_list.jpg, id=440, 797.98125pt x 390.70969pt>
+<images/CPM_mismatch_list.jpg, id=599, 797.98125pt x 390.70969pt>
 File: images/CPM_mismatch_list.jpg Graphic file (type jpg)
 <use images/CPM_mismatch_list.jpg>
 Package pdftex.def Info: images/CPM_mismatch_list.jpg  used on input line 170.
@@ -1019,7 +1040,7 @@ Package pdftex.def Info: images/CPM_mismatch_list.jpg  used on input line 170.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/severe_spend_outlier_list.jpg, id=442, 1227.83719pt x 285.31593pt>
+<images/severe_spend_outlier_list.jpg, id=601, 1227.83719pt x 285.31593pt>
 File: images/severe_spend_outlier_list.jpg Graphic file (type jpg)
 <use images/severe_spend_outlier_list.jpg>
 Package pdftex.def Info: images/severe_spend_outlier_list.jpg  used on input li
@@ -1028,7 +1049,7 @@ ne 179.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/severe_spend_outlier_boxplot.jpg, id=443, 1333.98375pt x 475.7775pt>
+<images/severe_spend_outlier_boxplot.jpg, id=602, 1333.98375pt x 475.7775pt>
 File: images/severe_spend_outlier_boxplot.jpg Graphic file (type jpg)
 <use images/severe_spend_outlier_boxplot.jpg>
 Package pdftex.def Info: images/severe_spend_outlier_boxplot.jpg  used on input
@@ -1037,58 +1058,73 @@ Package pdftex.def Info: images/severe_spend_outlier_boxplot.jpg  used on input
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[25 <./images/0impressions.jpg> <./images/0impressionscount.jpg>])
-(appendix_channel_performance_analysis.tex [26 <./images/box_plotsjpg.jpg>]
-[27 <./images/CPM_mismatch_list.jpg> <./images/severe_spend_outlier_list.jpg> <
-./images/severe_spend_outlier_boxplot.jpg>] [28
+[29 <./images/0impressions.jpg> <./images/0impressionscount.jpg>])
+(appendix_channel_performance_analysis.tex [30 <./images/box_plotsjpg.jpg>]
+[31 <./images/CPM_mismatch_list.jpg> <./images/severe_spend_outlier_list.jpg> <
+./images/severe_spend_outlier_boxplot.jpg>] [32
 
 ]
 Appendix B.
-[29] [30]
+[33] [34]
 Underfull \vbox (badness 1783) has occurred while \output is active []
 
- [31]
-[32] [33]) (appendix_regional_performance_analysis.tex
+ [35]
+[36] [37]) (appendix_regional_performance_analysis.tex
 Underfull \vbox (badness 6157) has occurred while \output is active []
 
- [34]
-[35] [36]
+ [38]
+[39] [40]
 Underfull \vbox (badness 2334) has occurred while \output is active []
 
- [37]
-[38] [39]) (appendix_creative_performance_analysis.tex [40]
+ [41]
+[42] [43]) (appendix_creative_performance_analysis.tex [44]
 Underfull \vbox (badness 3449) has occurred while \output is active []
 
- [41]
-[42] [43] [44] [45]) [46] (main.aux)
+ [45]
+[46] [47] [48] [49]) (appendix_audience_product_analysis.tex
+Underfull \vbox (badness 2717) has occurred while \output is active []
+
+ [50]
+[51] [52]
+Underfull \vbox (badness 6961) has occurred while \output is active []
+
+ [53]
+[54]
+Overfull \hbox (17.16945pt too wide) in paragraph at lines 315--316
+[]\OT1/cmr/m/n/10.95 The high-est av-er-age CVR was achieved jointly by \OT1/cm
+r/bx/n/10.95 Athletes--Protein \OT1/cmr/m/n/10.95 and \OT1/cmr/bx/n/10.95 Fit-n
+ess Enthusiasts--
+ []
+
+[55]
+Overfull \hbox (9.1203pt too wide) in paragraph at lines 424--425
+[]\OT1/cmr/bx/n/10.95 Athletes--Preworkout \OT1/cmr/m/n/10.95 and \OT1/cmr/bx/n
+/10.95 Fit-ness Enthusiasts--Weight Loss \OT1/cmr/m/n/10.95 ex-hib-ited sta-tis
+-ti-cally equiv-
+ []
+
+) (appendix_competitive_event_analysis.tex [56] [57]
+Overfull \hbox (0.6989pt too wide) in paragraph at lines 113--114
+\OT1/cmr/m/n/10.95 No sta-tis-ti-cally sig-nif-i-cant dif-fer-ence in CVR was o
+b-served be-tween com-pet-i-tive and non-competitive
+ []
+
+[58]) [59] (main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 6167EA89D7F894CD01B950651A7567E6;9043
-(rerunfilecheck)             After:  4D3818F33DDF863F71A1388F48B08520;10257.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 360EE8DA77396C4E687ED7268072367C;14047.
  ) 
 Here is how much of TeX's memory you used:
- 21091 strings out of 474486
- 401529 string characters out of 5743754
- 1938542 words of memory out of 5000000
- 42797 multiletter control sequences out of 15000+600000
+ 21174 strings out of 474486
+ 402633 string characters out of 5743754
+ 1940542 words of memory out of 5000000
+ 42790 multiletter control sequences out of 15000+600000
  566558 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 83i,10n,93p,582b,579s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 83i,10n,93p,891b,579s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\joeva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1095.pk><C:/Users/joeva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb><C:/Users/joeva/AppData/Local/Programs/MiKTeX/fonts/type1/publ
@@ -1103,9 +1139,9 @@ Users/joeva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10
 .pfb><C:/Users/joeva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
 cm/cmti10.pfb><C:/Users/joeva/AppData/Local/Programs/MiKTeX/fonts/type1/public/
 amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (46 pages, 2541880 bytes).
+Output written on main.pdf (59 pages, 3248063 bytes).
 PDF statistics:
- 754 PDF objects out of 1000 (max. 8388607)
- 244 named destinations out of 1000 (max. 500000)
- 507 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1015 PDF objects out of 1200 (max. 8388607)
+ 328 named destinations out of 1000 (max. 500000)
+ 744 words of extra memory for PDF output out of 10000 (max. 10000000)
 

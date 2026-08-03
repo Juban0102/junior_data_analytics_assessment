@@ -1,0 +1,426 @@
+\section{Audience--Product Performance Analysis}\label{appendix:audience_product_performance_analysis}
+
+\subsection{Return on Advertising Spend (ROAS)}\label{appendix:audience_product_performance_analysis_ROAS}
+
+\subsubsection{Descriptive Statistics}
+
+\begin{table}[H]
+	\centering
+	\caption{Descriptive statistics for ROAS by audience--product combination.}
+	\begin{tabular}{lcccc}
+		\toprule
+		Audience--Product & Mean & Median & Std. Dev. & Count \\
+		\midrule
+		Athletes--Preworkout & 0.6176 & 0.5656 & 0.2749 & 349 \\
+		Athletes--Protein & 1.3059 & 1.1981 & 0.5542 & 1054 \\
+		Fitness Enthusiasts--Preworkout & 0.6189 & 0.5754 & 0.2404 & 704 \\
+		Fitness Enthusiasts--Weight Loss & 0.7560 & 0.6572 & 0.4480 & 355 \\
+		Weight Loss--Diet & 1.0578 & 0.9574 & 0.5374 & 711 \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\subsubsection{Assumption Tests}
+
+\subsubsection{Shapiro--Wilk Test}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lc}
+		\toprule
+		Audience--Product & p-value \\
+		\midrule
+		Athletes--Preworkout & $<0.0001$ \\
+		Athletes--Protein & $<0.0001$ \\
+		Fitness Enthusiasts--Preworkout & $<0.0001$ \\
+		Fitness Enthusiasts--Weight Loss & $<0.0001$ \\
+		Weight Loss--Diet & $<0.0001$ \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+All audience--product distributions significantly deviated from normality ($p<0.05$).
+
+\vspace{0.3cm}
+
+\subsubsection{Levene's Test}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lc}
+		\toprule
+		Statistic & Value \\
+		\midrule
+		p-value & $<0.0001$ \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+The variability of \textbf{ROAS differed significantly} across audience--product combinations.
+
+\vspace{0.3cm}
+
+\subsubsection{Kruskal--Wallis Test}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lc}
+		\toprule
+		Statistic & Value \\
+		\midrule
+		H-statistic & 1089.1785 \\
+		p-value & $<0.0001$ \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+The Kruskal--Wallis test indicates statistically significant differences in ROAS across audience--product combinations.
+
+\vspace{0.3cm}
+
+\subsubsection{Dunn Post-hoc Test}
+
+\begin{table}[H]
+	\centering
+	\caption{Pairwise Dunn test p-values (Bonferroni adjusted).}
+	\begin{tabular}{lccccc}
+		\toprule
+		& Ath-Pre & Ath-Pro & Fit-Pre & Fit-WL & WL-Diet \\
+		\midrule
+		Ath-Pre & -- & $<0.0001$ & 1.0000 & 0.0008 & $<0.0001$ \\
+		Ath-Pro & $<0.0001$ & -- & $<0.0001$ & $<0.0001$ & $<0.0001$ \\
+		Fit-Pre & 1.0000 & $<0.0001$ & -- & 0.0001 & $<0.0001$ \\
+		Fit-WL & 0.0008 & $<0.0001$ & 0.0001 & -- & $<0.0001$ \\
+		WL-Diet & $<0.0001$ & $<0.0001$ & $<0.0001$ & $<0.0001$ & -- \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\subsubsection{Summary}
+
+\begin{itemize}
+	\item The highest average ROAS was achieved by \textbf{Athletes--Protein} (1.3059).
+	\item The lowest average ROAS was observed for \textbf{Athletes--Preworkout} (0.6176), although it did not differ significantly from \textbf{Fitness Enthusiasts--Preworkout}.
+	\item \textbf{Athletes--Protein} achieved significantly higher ROAS than every other audience--product combination.
+	\item Both Pre-workout audience pairings exhibited statistically equivalent ROAS, suggesting consistently poor profitability regardless of whether the campaign targeted athletes or fitness enthusiasts.
+\end{itemize}
+
+
+
+\subsection{Click-Through Rate (CTR)}\label{appendix:audience_product_performance_analysis_CTR}
+
+\subsubsection{Descriptive Statistics}
+
+\begin{table}[H]
+	\centering
+	\caption{Descriptive statistics for CTR by audience--product combination.}
+	\begin{tabular}{lcccc}
+		\toprule
+		Audience--Product & Mean & Median & Std. Dev. & Count \\
+		\midrule
+		Athletes--Preworkout & 0.0055 & 0.0052 & 0.0022 & 349 \\
+		Athletes--Protein & 0.0074 & 0.0067 & 0.0037 & 1054 \\
+		Fitness Enthusiasts--Preworkout & 0.0081 & 0.0071 & 0.0044 & 704 \\
+		Fitness Enthusiasts--Weight Loss & 0.0054 & 0.0051 & 0.0021 & 355 \\
+		Weight Loss--Diet & 0.0083 & 0.0073 & 0.0042 & 711 \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\subsubsection{Assumption Tests}
+
+\subsubsection{Shapiro--Wilk Test}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lc}
+		\toprule
+		Audience--Product & p-value \\
+		\midrule
+		Athletes--Preworkout & $<0.0001$ \\
+		Athletes--Protein & $<0.0001$ \\
+		Fitness Enthusiasts--Preworkout & $<0.0001$ \\
+		Fitness Enthusiasts--Weight Loss & $<0.0001$ \\
+		Weight Loss--Diet & $<0.0001$ \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+All audience--product distributions significantly deviated from normality ($p<0.05$).
+
+\vspace{0.3cm}
+
+\subsubsection{Levene's Test}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lc}
+		\toprule
+		Statistic & Value \\
+		\midrule
+		p-value & $<0.0001$ \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+The variability of \textbf{CTR differed significantly} across audience--product combinations.
+
+\vspace{0.3cm}
+
+\subsubsection{Kruskal--Wallis Test}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lc}
+		\toprule
+		Statistic & Value \\
+		\midrule
+		H-statistic & 281.8890 \\
+		p-value & $<0.0001$ \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+The Kruskal--Wallis test indicates statistically significant differences in CTR across audience--product combinations.
+
+\vspace{0.3cm}
+
+\subsubsection{Dunn Post-hoc Test}
+
+\begin{table}[H]
+	\centering
+	\caption{Pairwise Dunn test p-values (Bonferroni adjusted).}
+	\begin{tabular}{lccccc}
+		\toprule
+		& Ath-Pre & Ath-Pro & Fit-Pre & Fit-WL & WL-Diet \\
+		\midrule
+		Ath-Pre & -- & $<0.0001$ & $<0.0001$ & 1.0000 & $<0.0001$ \\
+		Ath-Pro & $<0.0001$ & -- & 0.0284 & $<0.0001$ & 0.0002 \\
+		Fit-Pre & $<0.0001$ & 0.0284 & -- & $<0.0001$ & 1.0000 \\
+		Fit-WL & 1.0000 & $<0.0001$ & $<0.0001$ & -- & $<0.0001$ \\
+		WL-Diet & $<0.0001$ & 0.0002 & 1.0000 & $<0.0001$ & -- \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\subsubsection{Summary}
+
+\begin{itemize}
+	\item The highest average CTR was achieved by \textbf{Weight Loss--Diet} (0.0083).
+	\item The lowest average CTR was observed for \textbf{Fitness Enthusiasts--Weight Loss} (0.0054).
+	\item \textbf{Weight Loss--Diet} and \textbf{Fitness Enthusiasts--Preworkout} exhibited statistically equivalent CTR values.
+	\item Likewise, \textbf{Athletes--Preworkout} and \textbf{Fitness Enthusiasts--Weight Loss} showed no statistically significant difference in CTR, whereas all remaining pairwise comparisons were statistically significant.
+\end{itemize}
+
+
+\subsection{Conversion Rate (CVR)}\label{appendix:audience_product_performance_analysis_CVR}
+
+\subsubsection{Descriptive Statistics}
+
+\begin{table}[H]
+	\centering
+	\caption{Descriptive statistics for CVR by audience--product combination.}
+	\begin{tabular}{lcccc}
+		\toprule
+		Audience--Product & Mean & Median & Std. Dev. & Count \\
+		\midrule
+		Athletes--Preworkout & 0.0265 & 0.0252 & 0.0081 & 349 \\
+		Athletes--Protein & 0.0300 & 0.0293 & 0.0066 & 1017 \\
+		Fitness Enthusiasts--Preworkout & 0.0179 & 0.0169 & 0.0055 & 666 \\
+		Fitness Enthusiasts--Weight Loss & 0.0300 & 0.0289 & 0.0078 & 355 \\
+		Weight Loss--Diet & 0.0280 & 0.0278 & 0.0059 & 687 \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\subsubsection{Assumption Tests}
+
+\subsubsection{Shapiro--Wilk Test}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lc}
+		\toprule
+		Audience--Product & p-value \\
+		\midrule
+		Athletes--Preworkout & $<0.0001$ \\
+		Athletes--Protein & $<0.0001$ \\
+		Fitness Enthusiasts--Preworkout & $<0.0001$ \\
+		Fitness Enthusiasts--Weight Loss & $<0.0001$ \\
+		Weight Loss--Diet & 0.0050 \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+All audience--product distributions significantly deviated from normality ($p<0.05$).
+
+\vspace{0.3cm}
+
+\subsubsection{Levene's Test}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lc}
+		\toprule
+		Statistic & Value \\
+		\midrule
+		p-value & $<0.0001$ \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+The variability of \textbf{CVR differed significantly} across audience--product combinations.
+
+\vspace{0.3cm}
+
+\subsubsection{Kruskal--Wallis Test}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lc}
+		\toprule
+		Statistic & Value \\
+		\midrule
+		H-statistic & 1058.9655 \\
+		p-value & $<0.0001$ \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+The Kruskal--Wallis test indicates statistically significant differences in CVR across audience--product combinations.
+
+\vspace{0.3cm}
+
+\subsubsection{Dunn Post-hoc Test}
+
+\begin{table}[H]
+	\centering
+	\caption{Pairwise Dunn test p-values (Bonferroni adjusted).}
+	\begin{tabular}{lccccc}
+		\toprule
+		& Ath-Pre & Ath-Pro & Fit-Pre & Fit-WL & WL-Diet \\
+		\midrule
+		Ath-Pre & -- & $<0.0001$ & $<0.0001$ & $<0.0001$ & 0.0005 \\
+		Ath-Pro & $<0.0001$ & -- & $<0.0001$ & 1.0000 & 0.0002 \\
+		Fit-Pre & $<0.0001$ & $<0.0001$ & -- & $<0.0001$ & $<0.0001$ \\
+		Fit-WL & $<0.0001$ & 1.0000 & $<0.0001$ & -- & 0.0802 \\
+		WL-Diet & 0.0005 & 0.0002 & $<0.0001$ & 0.0802 & -- \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\subsubsection{Summary}
+
+\begin{itemize}
+	\item The highest average CVR was achieved jointly by \textbf{Athletes--Protein} and \textbf{Fitness Enthusiasts--Weight Loss} (0.0300).
+	\item The lowest average CVR was observed for \textbf{Fitness Enthusiasts--Preworkout} (0.0179).
+	\item \textbf{Athletes--Protein} and \textbf{Fitness Enthusiasts--Weight Loss} exhibited statistically equivalent conversion rates.
+	\item Likewise, \textbf{Fitness Enthusiasts--Weight Loss} and \textbf{Weight Loss--Diet} did not differ significantly in CVR, whereas all remaining pairwise comparisons were statistically significant.
+\end{itemize}
+
+
+
+\subsection{Cost Per Click (CPC)}\label{appendix:audience_product_performance_analysis_CPC}
+
+\subsubsection{Descriptive Statistics}
+
+\begin{table}[H]
+	\centering
+	\caption{Descriptive statistics for CPC by audience--product combination.}
+	\begin{tabular}{lcccc}
+		\toprule
+		Audience--Product & Mean & Median & Std. Dev. & Count \\
+		\midrule
+		Athletes--Preworkout & 3.0082 & 2.6030 & 1.4140 & 349 \\
+		Athletes--Protein & 2.1128 & 1.9627 & 0.8525 & 1017 \\
+		Fitness Enthusiasts--Preworkout & 1.9238 & 1.7504 & 0.7849 & 666 \\
+		Fitness Enthusiasts--Weight Loss & 3.0715 & 2.6470 & 1.4731 & 355 \\
+		Weight Loss--Diet & 1.9270 & 1.7633 & 0.7977 & 687 \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\subsubsection{Assumption Tests}
+
+\subsubsection{Shapiro--Wilk Test}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lc}
+		\toprule
+		Audience--Product & p-value \\
+		\midrule
+		Athletes--Preworkout & $<0.0001$ \\
+		Athletes--Protein & $<0.0001$ \\
+		Fitness Enthusiasts--Preworkout & $<0.0001$ \\
+		Fitness Enthusiasts--Weight Loss & $<0.0001$ \\
+		Weight Loss--Diet & $<0.0001$ \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+All audience--product distributions significantly deviated from normality ($p<0.05$).
+
+\vspace{0.3cm}
+
+\subsubsection{Levene's Test}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lc}
+		\toprule
+		Statistic & Value \\
+		\midrule
+		p-value & $<0.0001$ \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+The variability of \textbf{CPC differed significantly} across audience--product combinations.
+
+\vspace{0.3cm}
+
+\subsubsection{Kruskal--Wallis Test}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lc}
+		\toprule
+		Statistic & Value \\
+		\midrule
+		H-statistic & 368.5351 \\
+		p-value & $<0.0001$ \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+The Kruskal--Wallis test indicates statistically significant differences in CPC across audience--product combinations.
+
+\vspace{0.3cm}
+
+\subsubsection{Dunn Post-hoc Test}
+
+\begin{table}[H]
+	\centering
+	\caption{Pairwise Dunn test p-values (Bonferroni adjusted).}
+	\begin{tabular}{lccccc}
+		\toprule
+		& Ath-Pre & Ath-Pro & Fit-Pre & Fit-WL & WL-Diet \\
+		\midrule
+		Ath-Pre & -- & $<0.0001$ & $<0.0001$ & 1.0000 & $<0.0001$ \\
+		Ath-Pro & $<0.0001$ & -- & 0.0002 & $<0.0001$ & 0.0002 \\
+		Fit-Pre & $<0.0001$ & 0.0002 & -- & $<0.0001$ & 1.0000 \\
+		Fit-WL & 1.0000 & $<0.0001$ & $<0.0001$ & -- & $<0.0001$ \\
+		WL-Diet & $<0.0001$ & 0.0002 & 1.0000 & $<0.0001$ & -- \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\subsubsection{Summary}
+
+\begin{itemize}
+	\item The highest average CPC was achieved by \textbf{Fitness Enthusiasts--Weight Loss} (3.0715).
+	\item The lowest average CPC was observed for \textbf{Fitness Enthusiasts--Preworkout} (1.9238), although it did not differ significantly from \textbf{Weight Loss--Diet}.
+	\item \textbf{Athletes--Preworkout} and \textbf{Fitness Enthusiasts--Weight Loss} exhibited statistically equivalent CPC values.
+	\item Likewise, \textbf{Fitness Enthusiasts--Preworkout} and \textbf{Weight Loss--Diet} showed no statistically significant difference in CPC, whereas all remaining pairwise comparisons were statistically significant.
+\end{itemize}

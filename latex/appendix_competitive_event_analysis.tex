@@ -1,0 +1,168 @@
+\section{Statistical Test Results of Competitive Event Analysis}
+\label{appendix:competitive_event_performance_analysis}
+
+This appendix presents the statistical test results evaluating whether campaign performance differed between periods with and without competitive events.
+
+\subsection{Return on Advertising Spend (ROAS)} \label{appendix:competitive_event_performance_analysis_ROAS}
+
+\subsubsection{Descriptive Statistics}
+
+\begin{table}[H]
+	\centering
+	\caption{Descriptive statistics for ROAS by competitive event.}
+	\begin{tabular}{lcccc}
+		\toprule
+		Competitive Event & Mean & Median & Std. Dev. & Count\\
+		\midrule
+		False & 0.9664 & 0.8475 & 0.5460 & 3031\\
+		True  & 0.8383 & 0.7503 & 0.4729 & 142\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\subsubsection{Statistical Tests}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lc}
+		\toprule
+		Test & p-value\\
+		\midrule
+		Shapiro--Wilk (False) & $<0.0001$\\
+		Shapiro--Wilk (True) & $<0.0001$\\
+		Levene's Test & 0.0276\\
+		Kruskal--Wallis Test & 0.0038\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+Campaigns conducted during competitive events exhibited significantly lower ROAS than campaigns conducted during non-competitive periods.
+
+\vspace{0.3cm}
+
+\subsection{Click-Through Rate (CTR)} \label{appendix:competitive_event_performance_analysis_CTR}
+
+\subsubsection{Descriptive Statistics}
+
+\begin{table}[H]
+	\centering
+	\caption{Descriptive statistics for CTR by competitive event.}
+	\begin{tabular}{lcccc}
+		\toprule
+		Competitive Event & Mean & Median & Std. Dev. & Count\\
+		\midrule
+		False & 0.0073 & 0.0065 & 0.0038 & 3031\\
+		True  & 0.0088 & 0.0083 & 0.0045 & 142\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\subsubsection{Statistical Tests}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lc}
+		\toprule
+		Test & p-value\\
+		\midrule
+		Shapiro--Wilk (False) & $<0.0001$\\
+		Shapiro--Wilk (True) & $<0.0001$\\
+		Levene's Test & 0.0772\\
+		Kruskal--Wallis Test & $<0.0001$\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+Campaigns conducted during competitive events achieved significantly higher CTR than campaigns conducted during non-competitive periods.
+
+\vspace{0.3cm}
+
+\subsection{Conversion Rate (CVR)} \label{appendix:competitive_event_performance_analysis_CVR}
+
+\subsubsection{Descriptive Statistics}
+
+\begin{table}[H]
+	\centering
+	\caption{Descriptive statistics for CVR by competitive event.}
+	\begin{tabular}{lcccc}
+		\toprule
+		Competitive Event & Mean & Median & Std. Dev. & Count\\
+		\midrule
+		False & 0.0265 & 0.0264 & 0.0081 & 2936\\
+		True  & 0.0265 & 0.0264 & 0.0082 & 138\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\subsubsection{Statistical Tests}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lc}
+		\toprule
+		Test & p-value\\
+		\midrule
+		Shapiro--Wilk (False) & $<0.0001$\\
+		Shapiro--Wilk (True) & 0.6173\\
+		Levene's Test & 0.7197\\
+		Kruskal--Wallis Test & 0.9415\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+No statistically significant difference in CVR was observed between competitive and non-competitive periods.
+
+\vspace{0.3cm}
+
+\subsection{Cost Per Click (CPC)} \label{appendix:competitive_event_performance_analysis_CPC}
+
+\subsubsection{Descriptive Statistics}
+
+\begin{table}[H]
+	\centering
+	\caption{Descriptive statistics for CPC by competitive event.}
+	\begin{tabular}{lcccc}
+		\toprule
+		Competitive Event & Mean & Median & Std. Dev. & Count\\
+		\midrule
+		False & 2.2335 & 1.9756 & 1.0956 & 2936\\
+		True  & 2.4392 & 2.2751 & 0.9424 & 138\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\subsubsection{Statistical Tests}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lc}
+		\toprule
+		Test & p-value\\
+		\midrule
+		Shapiro--Wilk (False) & $<0.0001$\\
+		Shapiro--Wilk (True) & 0.0001\\
+		Levene's Test & 0.5691\\
+		Kruskal--Wallis Test & 0.0006\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+Campaigns conducted during competitive events incurred significantly higher CPC than campaigns conducted during non-competitive periods.
+
+\vspace{0.3cm}
+
+\subsection{Summary}
+
+\begin{itemize}
+	
+	\item Competitive events were associated with a statistically significant decrease in ROAS.
+	
+	\item Campaigns conducted during competitive events generated significantly higher CTR.
+	
+	\item No statistically significant difference in CVR was observed between competitive and non-competitive periods.
+	
+	\item CPC increased significantly during competitive events, indicating greater advertising costs to acquire user clicks.
+	
+	\item Collectively, these findings suggest that reduced profitability during competitive events is primarily driven by higher acquisition costs rather than changes in customers' likelihood of purchasing after clicking an advertisement.
+	
+\end{itemize}

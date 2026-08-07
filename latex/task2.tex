@@ -1,14 +1,12 @@
 \chapter{Performance Analysis}
 
-The exploratory analysis identified observable differences in performance metrics across multiple business dimensions, including advertising platform, region, creative type, product category, and target audience. 
+The analyses presented in this chapter should be interpreted as exploratory rather than causal. Campaign cahracteristics including platform, product\_category, audience\_target, creative\_types, etc.. are not independently distributed across the dataset.
+
+Consequently, observed performance differences cannot be attributed to any single factor in isolation. Instead, the objective of this chapter is to identify consistent performance patterns, prioritize areas for further investigation, and generate hypotheses to guide future optimization and controlled experiments.
 
 However, descriptive statistics alone cannot determine whether these observed differences represent genuine performance differences or are simply the result of random variation. Therefore, statistical significance testing was performed before drawing business conclusions.
 
 \section{Statistical Methodology}
-
-Preliminary assessment of the data showed that the distributions of several performance metrics, particularly ROAS, deviated significantly from normality. Such behavior is common in advertising datasets, where campaign performance is often positively skewed due to a small number of exceptionally high-performing campaigns.
-
-Consequently, non-parametric statistical methods were adopted where appropriate.
 
 The following statistical tests were used throughout the analysis:
 
@@ -19,211 +17,102 @@ The following statistical tests were used throughout the analysis:
 	Used to assess whether the distribution of each performance metric follows a normal distribution. The results determined whether parametric statistical methods were appropriate for subsequent analyses.
 	
 	\textbf{Statistical Question:}
-	\begin{quote}
-		\textit{Do the observed performance metrics satisfy the assumptions required for parametric statistical tests?}
-	\end{quote}
+	\begin{itemize}
+		\item \textit{Do the observed performance metrics satisfy the assumptions required for parametric statistical tests?}
+	\end{itemize}
 	
 	\item \textbf{Levene's Test}
 	
 	Used to determine whether the variability (consistency) of a performance metric differs significantly across groups.
 	
 	\textbf{Business Question Answered:}
-	\begin{quote}
-		\textit{Which business groups deliver more consistent advertising performance, and which exhibit greater variability or unpredictability?}
-	\end{quote}
+	\begin{itemize}
+		\item \textit{Which business groups deliver more consistent advertising performance, and which exhibit greater variability or unpredictability?}
+	\end{itemize}
 	
 	\item \textbf{Kruskal--Wallis Test}
 	
 	A non-parametric alternative to one-way ANOVA used to determine whether the distribution of a performance metric differs significantly across multiple groups. This test was selected because the normality assumption required for ANOVA was not satisfied.
 	
 	\textbf{Business Question Answered:}
-	\begin{quote}
-		\textit{Do the observed differences in campaign performance across business groups (e.g., platforms, regions, creative types, product categories, and target audiences) represent genuine differences, or are they likely due to random variation?}
-	\end{quote}
+	\begin{itemize}
+		\item \textit{Do the observed differences in campaign performance across business groups (e.g., platforms, regions, creative types, product categories, and target audiences) represent genuine differences, or are they likely due to random variation?}
+	\end{itemize}
 	
 	\item \textbf{Dunn's Post-hoc Test}
 	
 	Performed following a statistically significant Kruskal--Wallis test to identify which specific groups differ from one another while controlling for multiple comparisons.
 	
 	\textbf{Business Question Answered:}
-	\begin{quote}
-		\textit{If significant differences exist, which specific business groups differ in their advertising performance?}
-	\end{quote}
+	\begin{itemize}
+		\item \textit{If significant differences exist, which specific business groups differ in their advertising performance?}
+	\end{itemize}
 	
 \end{enumerate}
 
 Together, these statistical procedures provide a systematic framework for validating assumptions, assessing performance consistency, determining whether differences are statistically significant, and identifying the specific groups responsible for those differences.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
 \section{Channel Performance Analysis}
-
-The exploratory analysis revealed observable differences in advertising performance across Facebook, Google, and TikTok. 
-
-To determine whether these differences reflected genuine performance variation rather than random fluctuations, statistical significance testing was performed. A complete summary of the statistical analyses, including assumption checks, Kruskal--Wallis tests, and Dunn's post-hoc comparisons, is provided in Appendix~\ref{appendix:platform_performance_analysis}.
-
-\subsection{Return on Advertising Spend (ROAS)}
-
-Return on Advertising Spend (ROAS) was selected as the primary measure of advertising profitability. Among the three platforms, Google achieved the highest average ROAS (1.106), followed by TikTok (0.960), while Facebook recorded the lowest average ROAS (0.816) as shown in \textit{Fig. \ref{fig:ros_by_platform}}. 
+Performance metrics across different channel/platforms was investigated and is shown in Fig. \ref{fig:metrics_by_platform}. 
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.3\textwidth]{images/ROAS_by_platform.jpg}
-	\caption{ROAS by Platform}
-	\label{fig:ros_by_platform}
+	\includegraphics[width=1\textwidth]{images/metrics_by_platform.jpg}
+	\caption{Performance Metrics by Platform}
+	\label{fig:metrics_by_platform}
 \end{figure}
-
-
-Statistical testing confirmed that \textbf{these differences were significant} (Appendix~\ref{appendix:platform_performance_analysis_ROAS}), indicating that Google consistently generated greater revenue for each dollar invested in advertising than the other platforms.
-
-\subsection{Click-Through Rate (CTR)}
-
-Click-Through Rate (CTR) was analyzed to evaluate each platform's ability to attract user engagement. Google achieved the highest average CTR (1.00\%), substantially outperforming both TikTok (0.63\%) and Facebook (0.57\%). 
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.3\textwidth]{images/CTR_by_platform.jpg}
-	\caption{CTR by Platform}
-	\label{fig:CTR_by_platform}
-\end{figure}
-
-The statistical analysis confirmed that \textbf{these differences were significant} (Appendix~\ref{appendix:platform_performance_analysis_CTR}). These findings suggest that Google advertisements were more effective at capturing user attention and encouraging engagement.
-
-
-
-
-
-
-\subsection{Conversion Rate (CVR)}
-
-Conversion Rate (CVR) was used to measure each platform's effectiveness in converting user engagement into purchases. Facebook recorded the highest average CVR (2.87\%), while Google and TikTok achieved nearly identical conversion rates (2.54\%). 
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.3\textwidth]{images/CVR_by_platform.jpg}
-	\caption{CVR by Platform}
-	\label{fig:CVR_by_platform}
-\end{figure}
-
-
-Statistical testing showed that \textbf{Facebook converted clicks into purchases more effectively than the other two platforms}, whereas \textbf{no statistically significant difference was observed between Google and TikTok} (Appendix~\ref{appendix:platform_performance_analysis_CVR}). 
-
-Although Facebook demonstrated stronger conversion efficiency, this metric should be interpreted alongside advertising cost and overall profitability.
-
-
-\subsection{Cost Per Click (CPC)}
-
-Cost Per Click (CPC) measures the average advertising cost required to generate a user click. Google achieved the lowest average CPC (\$1.87), followed by TikTok (\$1.98), while Facebook incurred the highest average CPC (\$2.84). 
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.3\textwidth]{images/CPC_by_platform.jpg}
-	\caption{CPC by Platform}
-	\label{fig:CPC_by_platform}
-\end{figure}
-
-Statistical testing confirmed that the differences among all three platforms were significant (Appendix~\ref{appendix:platform_performance_analysis_CPC}). These results indicate that Google acquired user engagement more cost-effectively than either Facebook or TikTok.
-
-\subsection{Overall Platform Performance}
-
-Taken together, the four performance metrics indicate that \textbf{Google is currently the strongest-performing advertising platform} while Facebook is the weakest-performing advertising platform. 
 
 \begin{itemize}
-
-
-	\item Google generated the highest return on advertising investment(ROAS), attracted the greatest level of user engagement(CTR), and acquired clicks at the lowest cost(CPC). 
-
-	\item Although Facebook achieved the highest conversion rate, this advantage was offset by its substantially higher acquisition costs and lower overall ROAS. 
-
- 	\item TikTok demonstrated balanced performance across all metrics but did not outperform Google in any of the primary business measures.
-
-	\item From a business perspective, Google currently delivers the greatest overall value and represents the strongest candidate for additional advertising investment.
-
-	\item Conversely, Facebook should not necessarily receive additional budget until improvements are made to reduce acquisition costs while maintaining its strong conversion performance. 
-
-	\item TikTok represents a stable intermediate option that may benefit from further optimization but currently offers lower overall returns than Google.
-
+	\item FB exhibited the highest CVR out of all platforms which is offset by the high CPC and low CTR leading to its low ROAS.
+	
+	\item Google exhibited the highest CTR across platforms with the lowest Cost per Clicks.
+	 
+	\item From a business perspective, Google currently delivers the greatest overall value in contrast to FB platform based on their ROAS.
+	
 \end{itemize}
 
+Drilling down on platforms by creative\_type we can see that Google search exhibited high ROAS while google Display exhibited one of the lowest ROAS as shown in Fig. \ref{fig:metrics_by_platform_creatives}. 
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.6\textwidth]{images/ROAS_by_platform_by_creative.jpg}
+	\caption{ROAS by Platform by Creative\_type}
+	\label{fig:metrics_by_platform_creatives}
+\end{figure}
+
+This indicates that  \textbf{the performance of an ad campaign is not tied to the platform}, further analyses is required.
+ 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
+\newpage
 \section{Regional Performance Analysis}
 
-The exploratory assessment suggested that advertising performance varied across geographic regions. 
 
-A complete summary of the statistical analyses, including assumption checks, Kruskal--Wallis tests, and Dunn's post-hoc comparisons, is provided in Appendix \ref{appendix:regional_performance_analysis}.
-
-\subsection{Return on Advertising Spend (ROAS)}
-
-Return on Advertising Spend (ROAS) was used to evaluate advertising profitability across the four regions. The Northeast achieved the highest average ROAS (1.033), followed closely by the West (1.008), while the Midwest recorded the lowest average ROAS (0.834), as shown in \textit{Fig. \ref{fig:ROAS_by_region}}.
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.4\textwidth]{images/ROAS_by_region.jpg}
-	\caption{ROAS by Region}
-	\label{fig:ROAS_by_region}
+	\includegraphics[width=0.8\textwidth]{images/metrics_by_region.jpg}
+	\caption{Performance Metrics by Region}
+	\label{fig:metrics_by_region}
 \end{figure}
 
 
-
-Statistical testing confirmed that the Midwest performed significantly worse than the other three regions (Appendix \ref{appendix:regional_performance_analysis_ROAS}). However, no statistically significant differences were observed among the Northeast, South, and West. These findings suggest that the Midwest consistently generated lower financial returns from advertising investment.
-
-\subsection{Click-Through Rate (CTR)}
-
-Click-Through Rate (CTR) was analyzed to assess audience engagement across regions. Although the Midwest recorded the highest average CTR (0.74\%) and the Northeast the lowest (0.72\%), these differences were minimal.
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.4\textwidth]{images/CTR_by_region.jpg}
-	\caption{CTR by Region}
-	\label{fig:CTR_by_region}
-\end{figure}
-
-Statistical testing found no significant differences in CTR among the four regions (Appendix \ref{appendix:regional_performance_analysis_CTR}). This indicates that advertisements attracted similar levels of user engagement regardless of geographic region.
-
-\subsection{Conversion Rate (CVR)}
-
-Conversion Rate (CVR) was used to evaluate each region's ability to convert user engagement into purchases. The Northeast achieved the highest average CVR (2.84\%), while the Midwest recorded the lowest average CVR (2.29\%).
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.4\textwidth]{images/CVR_by_region.jpg}
-	\caption{CVR by Region}
-	\label{fig:CVR_by_region}
-\end{figure}
-
-Statistical testing confirmed that the Midwest converted significantly fewer clicks into purchases than every other region (Appendix~\ref{appendix:regional_performance_analysis_CVR}). The Northeast also achieved significantly higher conversion rates than both the South and West, whereas no statistically significant difference was observed between the South and West.
-
-These findings indicate that regional differences are driven primarily by conversion effectiveness rather than customer engagement.
-
-\subsection{Cost Per Click (CPC)}
-
-Cost Per Click (CPC) measures the average advertising cost required to generate a user click. Average CPC values were nearly identical across all four regions, ranging from \$2.24 to \$2.25.
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.4\textwidth]{images/CPC_by_region.jpg}
-	\caption{CPC by Region}
-	\label{fig:CPC_by_region}
-\end{figure}
-
-Statistical testing confirmed that no significant regional differences existed in CPC (Appendix~\ref{appendix:regional_performance_analysis_CPC}). These results suggest that advertising costs were relatively consistent across geographic markets.
-
-\subsection{Regional Performance Summary}
-
-Taken together, the four performance metrics indicate that geographic location has a measurable impact on campaign profitability and conversion effectiveness, but relatively little influence on advertising engagement or acquisition cost.
 
 \begin{itemize}
-	\item The \textbf{Northeast} demonstrated the strongest overall regional performance, achieving the highest ROAS and the highest conversion rate, suggesting that campaigns in this region generate the greatest financial return.
+
 	
-	\item The \textbf{Midwest} consistently underperformed, recording both the lowest ROAS and the lowest conversion rate despite exhibiting click-through rates comparable to the other regions. This suggests that the primary challenge lies in converting interested users into customers rather than attracting engagement.
-	
-	\item The \textbf{South} and \textbf{West} delivered comparable performance across all four metrics, with neither region showing a statistically significant advantage over the other in most comparisons.
+	\item The \textbf{Midwest} consistently underperformed, recording both the lowest ROAS and the lowest conversion rate despite exhibiting click-through rates comparable to the other regions. This suggests that the primary challenge lies in converting interested users into customers rather than attracting engagement in this region.
 	
 	\item Because CTR and CPC did not differ significantly across regions, regional performance differences appear to be driven primarily by post-click behavior rather than differences in advertising cost or user engagement.
 	
 
 \end{itemize}
+
+
+
 
 From a business perspective, further investigation should focus on \textbf{identifying factors that contribute to the Midwest's weaker conversion performance}. 
 
@@ -233,158 +122,81 @@ Potential explanations include regional differences in customer preferences, pur
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
+\newpage
 \section{Creative Performance Analysis}
+Creative formats are highly imbalanced across campaigns, with certain creative types represented by only one or two campaigns as shown in Fig. \ref{fig:creative_type_count}. Consequently, comparisons should be interpreted as descriptive rather than causal.  
 
-The exploratory assessment suggested that advertising performance varied across different creative types.
-
-A complete summary of the statistical analyses, including assumption checks, Kruskal--Wallis tests, and Dunn's post-hoc comparisons, is provided in Appendix~\ref{appendix:creative_performance_analysis}.
-
-\subsection{Return on Advertising Spend (ROAS)}
-
-Return on Advertising Spend (ROAS) was used to evaluate the profitability of each creative type. Search advertisements achieved the highest average ROAS (1.324), followed by Video (0.989), while Image advertisements recorded the lowest average ROAS (0.618), as shown in \textit{Fig.~\ref{fig:ROAS_by_creative}}.
-
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
-	\includegraphics[width=0.4\textwidth]{images/ROAS_by_creative.jpg}
-	\caption{ROAS by Creative Type}
-	\label{fig:ROAS_by_creative}
+	\includegraphics[width=0.3\textwidth]{images/creative_type_count.jpg}
+	\caption{Creative Type Campaign counts}
+	\label{fig:creative_type_count}
 \end{figure}
 
-Statistical testing confirmed that Search advertisements significantly outperformed every other creative type (Appendix~\ref{appendix:creative_performance_analysis_ROAS}). Carousel and Display creatives exhibited statistically similar ROAS values, while Display and Image creatives also showed no significant difference. These findings indicate that Search advertisements consistently generated superior financial returns compared with the remaining creative formats.
+Accordingly, the following observations are intended to describe aggregate performance patterns rather than isolate the causal effect of creative format. 
 
-\subsection{Click-Through Rate (CTR)}
-
-Click-Through Rate (CTR) was analyzed to evaluate audience engagement across creative types. Display and Search advertisements achieved the highest average CTR (approximately 1.00\%), whereas Carousel advertisements recorded the lowest average CTR (0.54\%), as illustrated in \textit{Fig.~\ref{fig:CTR_by_creative}}.
-
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
-	\includegraphics[width=0.4\textwidth]{images/CTR_by_creative.jpg}
-	\caption{CTR by Creative Type}
-	\label{fig:CTR_by_creative}
+	\includegraphics[width=0.8\textwidth]{images/metrics_by_creative.jpg}
+	\caption{Performance Metrics by Creatives}
+	\label{fig:metrics_by_creatives}
 \end{figure}
 
-Statistical testing indicated that Display and Search advertisements achieved statistically comparable click-through rates (Appendix~\ref{appendix:creative_performance_analysis_CTR}). Likewise, Carousel and Image creatives did not differ significantly from one another. All remaining pairwise comparisons were statistically significant, suggesting that Search and Display creatives consistently generated stronger audience engagement than the remaining formats.
-
-\subsection{Conversion Rate (CVR)}
-
-Conversion Rate (CVR) was used to evaluate the effectiveness of each creative type in converting user engagement into purchases. Carousel advertisements achieved the highest average conversion rate (3.00\%), closely followed by Search advertisements (2.91\%), whereas Display advertisements recorded the lowest average conversion rate (1.78\%).
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.4\textwidth]{images/CVR_by_creative.jpg}
-	\caption{CVR by Creative Type}
-	\label{fig:CVR_by_creative}
-\end{figure}
-
-Statistical testing confirmed that Carousel and Search creatives achieved statistically equivalent conversion rates (Appendix~\ref{appendix:creative_performance_analysis_CVR}). Similarly, Image and Video creatives exhibited comparable conversion performance, whereas Display advertisements converted significantly fewer clicks into purchases than every other creative type. These findings suggest that creative format has a substantial influence on post-click customer behavior.
-
-\subsection{Cost Per Click (CPC)}
-
-Cost Per Click (CPC) measures the average advertising cost required to generate a user click. Display advertisements achieved the lowest average CPC (\$1.85), followed closely by Search advertisements (\$1.88), while Carousel advertisements recorded the highest average CPC (\$3.07).
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.4\textwidth]{images/CPC_by_creative.jpg}
-	\caption{CPC by Creative Type}
-	\label{fig:CPC_by_creative}
-\end{figure}
-
-Statistical testing confirmed that Carousel and Image creatives exhibited statistically similar CPC values, while Display and Search advertisements also showed no statistically significant difference (Appendix~\ref{appendix:creative_performance_analysis_CPC}). All remaining pairwise comparisons were statistically significant, indicating meaningful differences in advertising cost among the creative formats.
-
-\subsection{Creative Performance Summary}
-
-Taken together, the four performance metrics indicate that creative type has a substantial influence on campaign profitability, audience engagement, conversion effectiveness, and advertising cost.
-
+Statistical significance tests for this section is shown in detail in Appendix \ref{appendix:creative_performance_analysis}. 
 \begin{itemize}
-	
-	\item \textbf{Search} advertisements demonstrated the strongest overall performance, achieving the highest ROAS while maintaining one of the lowest CPC values and a conversion rate comparable to the best-performing creative type. These findings suggest that Search creatives provide the most efficient balance between advertising cost and revenue generation.
-	
-	\item \textbf{Carousel} advertisements achieved the same conversion rate as Search advertisements but also incurred the highest CPC. This indicates that although Carousel creatives are effective at converting interested users, they require substantially greater advertising investment to generate those conversions.
-	
-	\item \textbf{Display} advertisements generated strong audience engagement through one of the highest CTR values and the lowest CPC. However, they consistently recorded the lowest conversion rate, suggesting that user interest generated by these advertisements does not effectively translate into purchases.
-	
-	\item \textbf{Image} advertisements exhibited the weakest overall financial performance, producing the lowest ROAS while incurring relatively high CPC values. This suggests that Image creatives provide comparatively poor returns on advertising investment.
-	
-	\item Because statistically significant differences were observed across all four performance metrics, creative selection appears to influence not only customer engagement but also advertising efficiency and overall campaign profitability.
-	
+	\item Search creatives exhibited the highest ROAS, whereas Display and Image exhibited the lowest ROAS.
+	\item Search and Display successfuly generate clicks as shown by their CTR.
+	\item In terms of traffic acquisition cost, carousel and image creatives are the most expensive.
+	\item Carousel and Search exhibit the highest conversion efficiency as evidenced by their high CVR.
 \end{itemize}
 
-	From a business perspective, the results suggest that \textbf{Search advertisements should be prioritized when maximizing advertising profitability}, while Carousel creatives may be appropriate for campaigns focused on maximizing conversion rates despite their higher acquisition costs. Conversely, optimization efforts for Display advertisements should focus on improving post-click conversion performance, whereas Image creatives may benefit from redesign or replacement due to their comparatively weak financial performance.
+\subsection{Video Completion Rate vs Conversion}
+We explored the relationship between video completion rate and conversion efficiency(CVR) as shown in Fig. \ref{fig:video_completion_rate}.
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{images/CVR_vs_Video_Completion_Rate.png}
+	\caption{CVR vs Video Completion Rate}
+	\label{fig:video_completion_rate}
+\end{figure}
+
+There is no statistically significant correlation between the conversion rate(CVR) and video completion rate. 
+
+
+
+
+
+
+
+
+
+
+
+
 	
 	
 	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Audience--Product Performance Analysis}
+\section{Audience-Product Performance Analysis}
+Performance of existing campaigns across different audience-product pairs was also investigated. 
 
-The exploratory assessment suggested that campaign performance varied across different audience--product combinations. Rather than evaluating audience and product category independently, this analysis examines whether pairing a specific audience with a particular product influences advertising effectiveness.
-
-A complete summary of the statistical analyses, including assumption checks, Kruskal--Wallis tests, and Dunn's post-hoc comparisons, is provided in Appendix~\ref{appendix:audience_product_performance_analysis}.
-
-\subsection{Return on Advertising Spend (ROAS)}
-
-Return on Advertising Spend (ROAS) was used to evaluate advertising profitability across the five audience--product combinations. The Athletes--Protein campaigns achieved the highest average ROAS (1.306), followed by WeightLoss--Diet (1.058), whereas both Athletes--Preworkout (0.618) and FitnessEnth--Preworkout (0.619) recorded the lowest average ROAS, as shown in \textit{Fig.~\ref{fig:ROAS_by_audience_product}}.
-
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
-	\includegraphics[width=0.6\textwidth]{images/ROAS_by_audience-product.jpg}
-	\caption{ROAS by Audience--Product Combination}
-	\label{fig:ROAS_by_audience_product}
+	\includegraphics[width=1\textwidth]{images/metrics_by_audience-product.jpg}
+	\caption{Performance Metrics by Audience-Product}
+	\label{fig:audience-product}
 \end{figure}
-
-Statistical testing confirmed significant differences in ROAS among the audience--product combinations (Appendix~\ref{appendix:audience_product_performance_analysis_ROAS}). Interestingly, the two Pre-workout audience segments did not differ significantly from one another, indicating that both audiences generated similarly poor financial returns. In contrast, Athletes--Protein significantly outperformed every other audience--product combination.
-
-\subsection{Click-Through Rate (CTR)}
-
-Click-Through Rate (CTR) was analyzed to assess audience engagement across the audience--product combinations. WeightLoss--Diet achieved the highest average CTR (0.83\%), followed closely by FitnessEnth--Preworkout (0.81\%), whereas FitnessEnth--WeightLoss recorded the lowest average CTR (0.54\%).
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.6\textwidth]{images/CTR_by_audience-product.jpg}
-	\caption{CTR by Audience--Product Combination}
-	\label{fig:CTR_by_audience_product}
-\end{figure}
-
-Statistical testing indicated that FitnessEnth--Preworkout and WeightLoss--Diet exhibited statistically similar click-through rates (Appendix~\ref{appendix:audience_product_performance_analysis_CTR}). Likewise, Athletes--Preworkout and FitnessEnth--WeightLoss achieved comparable engagement levels. These findings suggest that audience engagement differs across audience--product combinations, although strong engagement alone does not necessarily correspond to higher advertising profitability.
-
-\subsection{Conversion Rate (CVR)}
-
-Conversion Rate (CVR) was used to evaluate each audience--product combination's ability to convert user engagement into purchases. Athletes--Protein and FitnessEnth--WeightLoss achieved the highest average conversion rates (3.00\%), whereas FitnessEnth--Preworkout recorded the lowest conversion rate (1.79\%).
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.6\textwidth]{images/CVR_by_audience-product.jpg}
-	\caption{CVR by Audience--Product Combination}
-	\label{fig:CVR_by_audience_product}
-\end{figure}
-
-Statistical testing confirmed that Athletes--Protein and FitnessEnth--WeightLoss exhibited statistically equivalent conversion performance (Appendix~\ref{appendix:audience_product_performance_analysis_CVR}). WeightLoss--Diet also achieved conversion rates comparable to FitnessEnth--WeightLoss. In contrast, FitnessEnth--Preworkout consistently recorded the weakest conversion performance, suggesting that the primary limitation of this audience--product pairing lies in converting interested users into customers.
-
-\subsection{Cost Per Click (CPC)}
-
-Cost Per Click (CPC) measures the average advertising cost required to generate a user click. FitnessEnth--WeightLoss recorded the highest average CPC (\$3.07), followed closely by Athletes--Preworkout (\$3.01), whereas FitnessEnth--Preworkout achieved the lowest CPC (\$1.92).
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.6\textwidth]{images/CPC_by_audience-product.jpg}
-	\caption{CPC by Audience--Product Combination}
-	\label{fig:CPC_by_audience_product}
-\end{figure}
-
-Statistical testing indicated that FitnessEnth--Preworkout and WeightLoss--Diet exhibited statistically similar CPC values, while Athletes--Preworkout and FitnessEnth--WeightLoss also showed no statistically significant difference (Appendix~\ref{appendix:audience_product_performance_analysis_CPC}). These findings suggest that advertising costs differ substantially across audience--product combinations.
-
-\subsection{Audience--Product Performance Summary}
-
-Taken together, the four performance metrics indicate that campaign performance is influenced not only by the selected audience or product category individually, but also by the interaction between the two.
 
 \begin{itemize}
 	
-	\item The \textbf{Athletes--Protein} combination demonstrated the strongest overall performance, achieving the highest ROAS while maintaining one of the highest conversion rates. This audience--product pairing appears to generate the greatest financial return from advertising investment.
+	\item The \textbf{Athletes-Protein} combination demonstrated the strongest overall performance, achieving the highest ROAS while maintaining one of the highest conversion rates. This audience-product pairing appears to generate the greatest financial return from advertising investment.
 	
-	\item The \textbf{WeightLoss--Diet} combination also performed strongly, producing the second-highest ROAS, the highest click-through rate, and relatively low acquisition costs. These findings suggest that Diet campaigns are particularly effective when targeted toward individuals interested in weight loss.
+	\item The \textbf{WeightLoss-Diet} combination also performed strongly, producing the second-highest ROAS, the highest click-through rate, and relatively low acquisition costs. These findings suggest that Diet campaigns are particularly effective when targeted toward individuals interested in weight loss.
 	
-	\item Both \textbf{Athletes--Preworkout} and \textbf{FitnessEnth--Preworkout} consistently exhibited poor ROAS despite differing levels of user engagement. This suggests that the weak financial performance of Pre-workout campaigns is not driven solely by audience selection, but may instead reflect broader issues related to the product offering, campaign messaging, pricing strategy, or post-click conversion experience.
+	\item Both \textbf{Athletes-Preworkout} and \textbf{FitnessEnth-Preworkout} consistently exhibited poor ROAS despite differing levels of user engagement. This suggests that the weak financial performance of Pre-workout campaigns is not driven solely by audience selection, but may instead reflect broader issues related to the product offering, campaign messaging, pricing strategy, or post-click conversion experience.
 	
-	\item The \textbf{FitnessEnth--WeightLoss} combination achieved one of the highest conversion rates but also incurred the highest advertising cost per click. Although this audience converts effectively, its relatively high acquisition cost reduces overall profitability.
+	\item The \textbf{FitnessEnth-WeightLoss} combination achieved one of the highest conversion rates but also incurred the highest advertising cost per click. Although this audience converts effectively, its relatively high acquisition cost reduces overall profitability.
 	
 	\item Because statistically significant differences were observed across all four performance metrics, optimizing campaign performance should consider the \textbf{audience--product pairing} rather than treating audience and product category as independent marketing decisions.
 	

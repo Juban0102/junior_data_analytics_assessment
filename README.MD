@@ -1,6 +1,14 @@
 # STILL IN PROGRESS
 ## Repository Structure
 
+Assessment Overview
+
+This project is a data analytics assessment focused on evaluating and optimizing the performance of a DTC fitness supplements brand's digital marketing campaigns across Facebook, Google, and TikTok. The analysis examines campaign performance across platforms, regions, creative types, product categories, and target audiences, using statistical testing and exploratory analysis to identify meaningful performance patterns.
+
+The project progresses from data quality assessment and exploratory analysis to performance analysis and strategic recommendations, including budget reallocation, A/B testing proposals, and long-term marketing strategies. Key metrics analyzed include ROAS, CTR, CPC, CVR, revenue, and ad spend, with consideration given to seasonal trends and competitive events.
+
+The assessment emphasizes translating quantitative findings into data-driven marketing decisions, while distinguishing descriptive performance patterns from causal conclusions.
+
 ```
 .
 ├── Data/
